@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="FD7C2EDF-85DC-4707-B52C-4997EBD9E798" name="TBL_GERAL">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="AB07DE81-7F9F-6789-7189-FCE9ABF527F6" name="TBL_CATEGORIA">
 <createdBy>joaov</createdBy>
-<createdTime>2025-05-06 18:57:18 UTC</createdTime>
+<createdTime>2025-05-06 20:09:55 UTC</createdTime>
 <ownerDesignName>visionhive</ownerDesignName>
 <engineerTo>
 <item key="3D577475-564B-A625-2483-544B1D70DCE4" value="true"/>
@@ -15,30 +15,28 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="id_geral" id="970ACB0D-56E9-89C6-F0DF-C6247E505CD2">
+<Attribute name="id_categoria" id="0A21CC0E-6ABF-8C1A-E852-F006CBDFA590">
 <createdBy>joaov</createdBy>
-<createdTime>2025-05-06 19:11:36 UTC</createdTime>
+<createdTime>2025-05-06 20:10:16 UTC</createdTime>
 <ownerDesignName>visionhive</ownerDesignName>
 <engineerTo>
 <item key="3D577475-564B-A625-2483-544B1D70DCE4" value="true"/>
 </engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
+<use>0</use>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="A4D1EE58-6F28-A14F-B160-2160B3CF51FE" name="geral PK">
+<identifier id="29AFEBDE-67C9-8FE7-D477-E976B158691F" name="TBL_CATEGORIA PK">
 <createdBy>joaov</createdBy>
-<createdTime>2025-05-06 19:14:05 UTC</createdTime>
+<createdTime>2025-05-06 20:10:25 UTC</createdTime>
 <ownerDesignName>visionhive</ownerDesignName>
 <engineerTo>
 <item key="3D577475-564B-A625-2483-544B1D70DCE4" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>970ACB0D-56E9-89C6-F0DF-C6247E505CD2</attributeRef>
+<attributeRef>0A21CC0E-6ABF-8C1A-E852-F006CBDFA590</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>
