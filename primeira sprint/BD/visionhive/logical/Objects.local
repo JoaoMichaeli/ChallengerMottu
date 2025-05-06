@@ -1,0 +1,5 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.logical.LogicalDesign>
+   <object objectType="Entity" objectID="FD7C2EDF-85DC-4707-B52C-4997EBD9E798" name="geral" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Entity" propertyParentId="9CE63CB0-8821-08DB-226A-3E13036E9B7A" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Entity" objectID="25DD3AB9-3293-0E41-D106-104646FE5A3E" name="Motos" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Entity" propertyParentId="9CE63CB0-8821-08DB-226A-3E13036E9B7A" propertySourceId="" propertyTargetId=""/>
+</oracle.dbtools.crest.model.design.logical.LogicalDesign>

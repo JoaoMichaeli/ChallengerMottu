@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="9CE63CB0-8821-08DB-226A-3E13036E9B7A" mainViewID="639655D3-21B3-72CC-7927-78AEF85F4C8C">
+<createdBy>joaov</createdBy>
+<createdTime>2025-05-06 18:56:50 UTC</createdTime>
+<ownerDesignName>visionhive</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

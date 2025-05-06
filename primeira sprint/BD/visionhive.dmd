@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="visionhive" id="2C38A122-10A4-CEBE-7D99-DE668323DF15" version="3.5">
+<createdBy>joaov</createdBy>
+<createdTime>2025-05-06 18:56:50 UTC</createdTime>
+<ownerDesignName>visionhive</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>2C38A122-10A4-CEBE-7D99-DE668323DF15</designId>
+</OSDM_Design>

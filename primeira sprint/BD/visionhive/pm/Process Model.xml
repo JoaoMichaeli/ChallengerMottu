@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<ProcessModel class="oracle.dbtools.crest.model.design.process.ProcessModel" name="Process Model" id="727718DE-DF27-8D67-39C1-95BEB4769FFB">
+<createdBy>joaov</createdBy>
+<createdTime>2025-05-06 18:56:50 UTC</createdTime>
+<ownerDesignName>visionhive</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</ProcessModel>
