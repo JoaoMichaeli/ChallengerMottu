@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>VisionHive</name>
+    </assembly>
+    <members>
+        <member name="M:VisionHive.Controllers.MotosController.GetMotos">
+            <summary>
+            Retorna uma lista de motos
+            </summary>
+            <remarks>
+            Exemplo de Solicitação:
+            
+                GET api/motos
+            
+            </remarks>
+            <response code = "200"> Retorna uma lista de motos</response>
+            <response code = "500"> Erro interno do servidor</response>
+            <response code = "503"> Serviço indisponível</response>
+        </member>
+        <member name="T:VisionHive.Migrations.InitialCreate">
+            <inheritdoc />
+        </member>
+        <member name="M:VisionHive.Migrations.InitialCreate.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:VisionHive.Migrations.InitialCreate.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:VisionHive.Migrations.InitialCreate.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:VisionHive.Migrations.AddAuditToMoto">
+            <inheritdoc />
+        </member>
+        <member name="M:VisionHive.Migrations.AddAuditToMoto.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:VisionHive.Migrations.AddAuditToMoto.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:VisionHive.Migrations.AddAuditToMoto.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>
