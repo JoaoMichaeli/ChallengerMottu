@@ -1,0 +1,40 @@
+
+	- 100 motos por pátio
+	- os fatores climatios tem que levar em conta, 
+	  que pode alagar, prejudicando a identificação da moto
+	- tem marcações físicas nas paredes, as motos tem fitas no guidão da moto
+		(Fazer marcações como no shopping ou uma triagem de hospital)
+		(zero organização)
+	- investir em câmeras pra pegar movimentações em tempo real pra identificação das motos com problemas (sugerir)
+	- sistema pra ver q moto q entra e sai: fazer esse sistema, onde moto estaria
+		(basicamente também a quantidade de motos que "impedem" a moto escolhida de sair importa)
+	- organizar as motos em áreas, onde ela fica no pátio e quando ela sair de lá saber quando
+	- trabalhar com tempo real e não em armazenar dados
+	- cada parte consegue identificar sua planta
+	- a cada 2 semanas eles meio que fazem a identificação das motos, pra ver em que lugar elas estão, etc
+	- IoT: mais pra ver se moto ta dentro ou fora do Pátio se foi roubada ou não..
+		(o gps é meio inviável pela falta de precisão da localidade, por causas dos satélites)
+		 -- o sinal é por chip do celular (3G/4G) -> ID: sim/não 
+			(informações de horário)
+		-- usam a bateria do celular pra mandar informações e pra econimizar energia, eles não mandam 
+		    o arquivo json com o identificador, não ficam mandando a cada segundo, pode ser a cada 
+		    minuto ou a cada hora
+	- financeiro é importantissimo
+	- cores das fitas:
+		- amarela
+		- roxa
+		- laranja
+		- azul
+		- verde
+			(estão no slide da mottu)
+		a cor da fita pode mudar conforme a "atualização" da moto
+
+	- é esperado uma padronização
+		(manter a organização e a padronização)
+	- querem ter o controle da média de tempo que uma moto "BOA" fica/sai do pátio
+	- o pátio funciona da 07 da manhã às 19/20hrs 
+
+
+	- estão tentando marcar a visita na próxima semana 
+
+	
