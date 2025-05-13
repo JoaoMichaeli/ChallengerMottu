@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="25DD3AB9-3293-0E41-D106-104646FE5A3E" name="TBL_MOTOS">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="25DD3AB9-3293-0E41-D106-104646FE5A3E" name="TBL_MOTOCICLETA">
 <createdBy>joaov</createdBy>
 <createdTime>2025-05-06 19:13:10 UTC</createdTime>
 <ownerDesignName>visionhive</ownerDesignName>
@@ -22,7 +22,37 @@
 <engineerTo>
 <item key="3D577475-564B-A625-2483-544B1D70DCE4" value="true"/>
 </engineerTo>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_categoria" id="620F75A5-640F-7C7C-0073-166221E0C45F">
+<createdBy>joaov</createdBy>
+<createdTime>2025-05-13 18:59:04 UTC</createdTime>
+<generatorID>05817572-97AC-7B3D-6EBC-9DF8643D65AE</generatorID>
+<ownerDesignName>visionhive</ownerDesignName>
+<engineerTo>
+<item key="3D577475-564B-A625-2483-544B1D70DCE4" value="true"/>
+</engineerTo>
+<referedAttribute>0A21CC0E-6ABF-8C1A-E852-F006CBDFA590</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_status" id="7CE0B522-2AAE-B12B-3C4A-A8C268F768BD">
+<createdBy>joaov</createdBy>
+<createdTime>2025-05-13 19:47:27 UTC</createdTime>
+<generatorID>9258C67F-1CE7-0B0B-804C-9DC869CA6FE0</generatorID>
+<ownerDesignName>visionhive</ownerDesignName>
+<engineerTo>
+<item key="3D577475-564B-A625-2483-544B1D70DCE4" value="true"/>
+</engineerTo>
+<referedAttribute>99C75B55-EEF4-2BC0-CED4-CFA14593D4F9</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="placa" id="536669FC-A181-9D5E-ABC6-04AD4B0FC8A1">
@@ -32,20 +62,11 @@
 <engineerTo>
 <item key="3D577475-564B-A625-2483-544B1D70DCE4" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="situacao" id="4E646BA5-A362-4555-D3AF-815BA2D0324E">
-<createdBy>joaov</createdBy>
-<createdTime>2025-05-06 19:13:30 UTC</createdTime>
-<ownerDesignName>visionhive</ownerDesignName>
-<engineerTo>
-<item key="3D577475-564B-A625-2483-544B1D70DCE4" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="chassi" id="3250D18D-A96D-59CF-6465-BECE6E8F0DBC">
 <createdBy>joaov</createdBy>
@@ -54,9 +75,24 @@
 <engineerTo>
 <item key="3D577475-564B-A625-2483-544B1D70DCE4" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="modelo" id="C11052AE-D2DC-2564-92D6-5BF7399F9DB0">
+<createdBy>joaov</createdBy>
+<createdTime>2025-05-13 20:37:31 UTC</createdTime>
+<ownerDesignName>visionhive</ownerDesignName>
+<engineerTo>
+<item key="3D577475-564B-A625-2483-544B1D70DCE4" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
@@ -70,6 +106,19 @@
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>26FD6F11-7064-58E4-68EE-8294666F5598</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="E9CADE11-71B3-3110-6F19-782814165F8F" name="TBL_MOTO_UN">
+<createdBy>joaov</createdBy>
+<createdTime>2025-05-13 19:19:27 UTC</createdTime>
+<ownerDesignName>visionhive</ownerDesignName>
+<engineerTo>
+<item key="3D577475-564B-A625-2483-544B1D70DCE4" value="true"/>
+</engineerTo>
+<newElementsIDs>536669FC-A181-9D5E-ABC6-04AD4B0FC8A1,3250D18D-A96D-59CF-6465-BECE6E8F0DBC</newElementsIDs>
+<usedAttributes>
+<attributeRef>536669FC-A181-9D5E-ABC6-04AD4B0FC8A1</attributeRef>
+<attributeRef>3250D18D-A96D-59CF-6465-BECE6E8F0DBC</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

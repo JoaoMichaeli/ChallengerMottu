@@ -14,4 +14,162 @@
 <maxVolumes>9999999</maxVolumes>
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_endereco" id="49B1F144-0330-9DD6-4183-BC5399922B45">
+<createdBy>joaov</createdBy>
+<createdTime>2025-05-13 19:01:20 UTC</createdTime>
+<ownerDesignName>visionhive</ownerDesignName>
+<engineerTo>
+<item key="3D577475-564B-A625-2483-544B1D70DCE4" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="numero" id="E1C6D407-5E17-04F9-69DD-A71CECC68858">
+<createdBy>joaov</createdBy>
+<createdTime>2025-05-13 19:01:20 UTC</createdTime>
+<ownerDesignName>visionhive</ownerDesignName>
+<engineerTo>
+<item key="3D577475-564B-A625-2483-544B1D70DCE4" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_filial" id="ABB41DC9-DB46-777A-667A-7570628242FF">
+<createdBy>joaov</createdBy>
+<createdTime>2025-05-13 19:08:49 UTC</createdTime>
+<generatorID>5A0F3A4E-BF35-F352-B584-56922D874E5C</generatorID>
+<ownerDesignName>visionhive</ownerDesignName>
+<engineerTo>
+<item key="3D577475-564B-A625-2483-544B1D70DCE4" value="true"/>
+</engineerTo>
+<referedAttribute>70B2C708-16EB-8F5D-083F-020AD950597E</referedAttribute>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cep" id="362FE6AF-CF29-5642-90BE-FDF86618DA32">
+<createdBy>joaov</createdBy>
+<createdTime>2025-05-13 19:01:20 UTC</createdTime>
+<ownerDesignName>visionhive</ownerDesignName>
+<engineerTo>
+<item key="3D577475-564B-A625-2483-544B1D70DCE4" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>9</dataTypeSize>
+<ownDataTypeParameters>9,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="logradouro" id="57FBA666-49A4-6FBD-E8B3-C063B507F6E0">
+<createdBy>joaov</createdBy>
+<createdTime>2025-05-13 19:01:20 UTC</createdTime>
+<ownerDesignName>visionhive</ownerDesignName>
+<engineerTo>
+<item key="3D577475-564B-A625-2483-544B1D70DCE4" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="bairro" id="7DA4EA98-4823-C7B1-6184-E931CA00F9C5">
+<createdBy>joaov</createdBy>
+<createdTime>2025-05-13 19:04:56 UTC</createdTime>
+<ownerDesignName>visionhive</ownerDesignName>
+<engineerTo>
+<item key="3D577475-564B-A625-2483-544B1D70DCE4" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cidade" id="9E133E16-FCE1-D433-2423-25358A881030">
+<createdBy>joaov</createdBy>
+<createdTime>2025-05-13 19:04:56 UTC</createdTime>
+<ownerDesignName>visionhive</ownerDesignName>
+<engineerTo>
+<item key="3D577475-564B-A625-2483-544B1D70DCE4" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="estado" id="AD4D5C78-A23C-6C95-03D1-849424AF7074">
+<createdBy>joaov</createdBy>
+<createdTime>2025-05-13 19:05:40 UTC</createdTime>
+<ownerDesignName>visionhive</ownerDesignName>
+<engineerTo>
+<item key="3D577475-564B-A625-2483-544B1D70DCE4" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pais" id="734AF399-13B7-DE99-4B73-649919F6919C">
+<createdBy>joaov</createdBy>
+<createdTime>2025-05-13 19:05:40 UTC</createdTime>
+<ownerDesignName>visionhive</ownerDesignName>
+<engineerTo>
+<item key="3D577475-564B-A625-2483-544B1D70DCE4" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="complemento" id="FDA131B2-E3E5-8EE6-017D-B303497E2502">
+<createdBy>joaov</createdBy>
+<createdTime>2025-05-13 19:04:56 UTC</createdTime>
+<ownerDesignName>visionhive</ownerDesignName>
+<engineerTo>
+<item key="3D577475-564B-A625-2483-544B1D70DCE4" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C70937FF-89E3-101B-35C4-5C6769EE4AF6" name="TBL_ENDERECO PK">
+<createdBy>joaov</createdBy>
+<createdTime>2025-05-13 19:06:23 UTC</createdTime>
+<ownerDesignName>visionhive</ownerDesignName>
+<engineerTo>
+<item key="3D577475-564B-A625-2483-544B1D70DCE4" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>49B1F144-0330-9DD6-4183-BC5399922B45</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="EAA0803B-F87B-FC58-A528-2AC52AD42657" name="TBL_ENDERECO_UN">
+<createdBy>joaov</createdBy>
+<createdTime>2025-05-13 19:17:54 UTC</createdTime>
+<ownerDesignName>visionhive</ownerDesignName>
+<engineerTo>
+<item key="3D577475-564B-A625-2483-544B1D70DCE4" value="true"/>
+</engineerTo>
+<newElementsIDs>E1C6D407-5E17-04F9-69DD-A71CECC68858</newElementsIDs>
+<usedAttributes>
+<attributeRef>E1C6D407-5E17-04F9-69DD-A71CECC68858</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
 </Entity>

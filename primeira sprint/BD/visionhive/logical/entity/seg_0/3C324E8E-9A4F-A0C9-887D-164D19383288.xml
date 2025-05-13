@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="FD7C2EDF-85DC-4707-B52C-4997EBD9E798" name="TBL_GERAL">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3C324E8E-9A4F-A0C9-887D-164D19383288" name="TBL_STATUS_MOTOCICLETA">
 <createdBy>joaov</createdBy>
-<createdTime>2025-05-06 18:57:18 UTC</createdTime>
+<createdTime>2025-05-13 19:23:06 UTC</createdTime>
 <ownerDesignName>visionhive</ownerDesignName>
 <engineerTo>
 <item key="3D577475-564B-A625-2483-544B1D70DCE4" value="true"/>
@@ -15,9 +15,9 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="id_geral" id="970ACB0D-56E9-89C6-F0DF-C6247E505CD2">
+<Attribute name="id_status" id="99C75B55-EEF4-2BC0-CED4-CFA14593D4F9">
 <createdBy>joaov</createdBy>
-<createdTime>2025-05-06 19:11:36 UTC</createdTime>
+<createdTime>2025-05-13 19:23:26 UTC</createdTime>
 <ownerDesignName>visionhive</ownerDesignName>
 <engineerTo>
 <item key="3D577475-564B-A625-2483-544B1D70DCE4" value="true"/>
@@ -27,18 +27,31 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="descricao" id="0F707D99-0C18-86F9-38D4-E89BF9E8A258">
+<createdBy>joaov</createdBy>
+<createdTime>2025-05-13 19:23:49 UTC</createdTime>
+<ownerDesignName>visionhive</ownerDesignName>
+<engineerTo>
+<item key="3D577475-564B-A625-2483-544B1D70DCE4" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="A4D1EE58-6F28-A14F-B160-2160B3CF51FE" name="geral PK">
+<identifier id="A211C9E8-6DB6-93A1-2532-76353223906E" name="TBL_STATUS_MOTOCICLETA PK">
 <createdBy>joaov</createdBy>
-<createdTime>2025-05-06 19:14:05 UTC</createdTime>
+<createdTime>2025-05-13 19:23:47 UTC</createdTime>
 <ownerDesignName>visionhive</ownerDesignName>
 <engineerTo>
 <item key="3D577475-564B-A625-2483-544B1D70DCE4" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>970ACB0D-56E9-89C6-F0DF-C6247E505CD2</attributeRef>
+<attributeRef>99C75B55-EEF4-2BC0-CED4-CFA14593D4F9</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>
