@@ -34,5 +34,5 @@ public class Motorcycle {
 
     @NotEmpty(message = "O modelo da moto não pode estar vazio")
     @ElementCollection
-    private List<MotorcycleModel> motorcycleModels;
+    private List<MotorcycleGroup> motorcycleModels;
 }

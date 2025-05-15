@@ -1,6 +1,6 @@
 package com.visionhive.visionhive.model;
 
-public enum MotorcycleModel {
+public enum MotorcycleGroup {
     MottuSport,
     MottuE,
     MottuPop
