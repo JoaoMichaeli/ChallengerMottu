@@ -21,7 +21,7 @@ public class Patio {
     @NotBlank(message = "O nome do pátio não pode estar em branco")
     private String name;
 
-    @OneToOne
+    @ManyToOne
     @JsonIgnore
     private Branch branch;
 }

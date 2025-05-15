@@ -28,7 +28,7 @@ public class BranchController {
     @Operation(summary = "Listar filiais", description = "Retorna um array com todas as filiais")
     @Cacheable("branchs")
     public List<Branch> index(){
-        return repository.findAll();
+        return repository.findAllWithPatios();
     }
 
     @PostMapping
