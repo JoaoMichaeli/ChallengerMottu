@@ -1,10 +1,10 @@
-package com.br.fiap.vision_hive;
+package com.visionhive.visionhive;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class VisionHiveApplicationTests {
+class VisionhiveApplicationTests {
 
 	@Test
 	void contextLoads() {
