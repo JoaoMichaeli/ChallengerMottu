@@ -23,8 +23,4 @@ public class Branch {
 
     @NotBlank(message = "O bairro não pode estar em branco")
     private String bairro;
-
-    @OneToOne
-    @JsonIgnore
-    private Patio patio;
 }

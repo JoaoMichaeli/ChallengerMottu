@@ -48,9 +48,17 @@ public class BranchController {
     }
 
     @DeleteMapping("{id}")
+    @Operation(summary = "Deletar filial", description = "Deletar a filial escolhida")
+    public ResponseEntity<Void> delete(@PathVariable Long id){
+        log.info("Deletando filial: " + id);
+        repository.delete(getBranch(id));
+        return ResponseEntity.noContent().build();
+    }
+
+    @PutMapping("{id}")
     @Operation(summary = "Atualizar filial", description = "Atualizar a filial")
     public ResponseEntity<Branch> update(@PathVariable Long id, @RequestBody @Valid Branch branch){
-        log.info("Atualiznado filial: " + id + " com " + branch);
+        log.info("Atualizando filial: " + id + " com " + branch);
         var oldBranch = getBranch(id);
         BeanUtils.copyProperties(branch, oldBranch, "id");
         repository.save(oldBranch);
