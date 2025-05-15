@@ -1,4 +1,64 @@
 package com.visionhive.visionhive.controller;
 
+import com.visionhive.visionhive.model.Branch;
+import com.visionhive.visionhive.repository.BranchRepository;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import jakarta.validation.Valid;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.BeanUtils;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.Cacheable;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.server.ResponseStatusException;
+import java.util.List;
+
+@RestController
+@RequestMapping("branchs")
+@Slf4j
 public class BranchController {
+
+    @Autowired
+    private BranchRepository repository;
+
+    @GetMapping
+    @Operation(summary = "Listar filiais", description = "Retorna um array com todas as filiais")
+    @Cacheable("branchs")
+    public List<Branch> index(){
+        return repository.findAll();
+    }
+
+    @PostMapping
+    @CacheEvict(value = "branchs", allEntries = true)
+    @Operation(summary = "Inserir filiais", description = "Inserir uma filial nova", responses = @ApiResponse(responseCode = "400", description = "Falha na validação"))
+    @ResponseStatus(code = HttpStatus.CREATED)
+    public Branch create(@RequestBody @Valid Branch branch){
+        log.info("Cadastrando filial: " + branch.getName());
+        return repository.save(branch);
+    }
+
+    @GetMapping("{id}")
+    @Operation(summary = "Buscar filial", description = "Retorna a filial buscada pelo ID")
+    public ResponseEntity<Branch> get(@PathVariable Long id){
+        log.info("Buscando filial: " + id);
+        return ResponseEntity.ok(getBranch(id));
+    }
+
+    @DeleteMapping("{id}")
+    @Operation(summary = "Atualizar filial", description = "Atualizar a filial")
+    public ResponseEntity<Branch> update(@PathVariable Long id, @RequestBody @Valid Branch branch){
+        log.info("Atualiznado filial: " + id + " com " + branch);
+        var oldBranch = getBranch(id);
+        BeanUtils.copyProperties(branch, oldBranch, "id");
+        repository.save(oldBranch);
+        return ResponseEntity.ok(oldBranch);
+    }
+
+    private Branch getBranch(Long id){
+        return repository.findById(id)
+                .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Filial não encontrada"));
+    }
 }

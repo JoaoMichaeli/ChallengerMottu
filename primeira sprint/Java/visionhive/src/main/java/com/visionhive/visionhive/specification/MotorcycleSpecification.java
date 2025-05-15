@@ -5,7 +5,7 @@ import org.springframework.data.jpa.domain.Specification;
 
 public class MotorcycleSpecification {
 
-    public static Specification<Motorcycle> whithFilters(){
-
-    }
+//    public static Specification<Motorcycle> whithFilters(){
+//
+//    }
 }
