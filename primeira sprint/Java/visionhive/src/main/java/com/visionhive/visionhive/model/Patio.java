@@ -19,7 +19,7 @@ public class Patio {
     private Long id;
 
     @NotBlank(message = "O nome do pátio não pode estar em branco")
-    private String name;
+    private String nome;
 
     @ManyToOne
     @JsonIgnore

@@ -11,7 +11,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class PatioDTO {
     @NotBlank(message = "O nome do pátio não pode estar em branco")
-    private String name;
+    private String nome;
 
     @NotNull(message = "O ID da filial não pode ser nulo")
     private Long branchId;

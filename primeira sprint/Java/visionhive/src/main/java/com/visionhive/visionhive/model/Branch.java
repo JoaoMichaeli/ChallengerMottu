@@ -22,7 +22,7 @@ public class Branch {
     private Long id;
 
     @NotBlank(message = "O nome da filial não pode estar em branco")
-    private String name;
+    private String nome;
 
     @NotBlank(message = "O bairro não pode estar em branco")
     private String bairro;

@@ -41,13 +41,13 @@ public class PatioController {
     @Operation(summary = "Inserir pátios", description = "Inserir um pátio novo", responses = @ApiResponse(responseCode = "400", description = "Validação falhou"))
     @ResponseStatus(code = HttpStatus.CREATED)
     public ResponseEntity<Patio> create(@RequestBody @Valid PatioDTO dto){
-        log.info("Cadastrando pátio: " + dto.getName());
+        log.info("Cadastrando pátio: " + dto.getNome());
 
         var branch = branchRepository.findById(dto.getBranchId())
                 .orElseThrow(() -> new ResponseStatusException(HttpStatus.BAD_REQUEST, "Filial não encontrada"));
 
         Patio patio = new Patio();
-        patio.setName(dto.getName());
+        patio.setNome(dto.getNome());
         patio.setBranch(branch);
 
         Patio saved = repository.save(patio);
@@ -79,7 +79,7 @@ public class PatioController {
         var branch = branchRepository.findById(dto.getBranchId())
                 .orElseThrow(() -> new ResponseStatusException(HttpStatus.BAD_REQUEST, "Filial não encontrada"));
 
-        oldPatio.setName(dto.getName());
+        oldPatio.setNome(dto.getNome());
         oldPatio.setBranch(branch);
 
         repository.save(oldPatio);
