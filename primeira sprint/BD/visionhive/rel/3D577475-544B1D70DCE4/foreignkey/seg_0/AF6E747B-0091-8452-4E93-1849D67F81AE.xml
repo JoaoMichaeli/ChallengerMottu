@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="AF6E747B-0091-8452-4E93-1849D67F81AE" containerWithKeyObject="DC634DDE-EBF3-A234-D313-3C9CAAD23E17" localFKIndex="F58C53E2-1A99-EFAE-2F9D-3C04D0788A7D" name="TBL_MOVIMENTACAO_TBL_PATIO_FK">
+<createdBy>joaov</createdBy>
+<createdTime>2025-05-16 11:17:17 UTC</createdTime>
+<generatorID>21BD3454-36AC-8420-0908-017DD02CF2A1</generatorID>
+<ownerDesignName>visionhive</ownerDesignName>
+<referredTableLongName>TBL_PATIO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>FEFBD432-A822-AD16-FC29-983F394DBFFB</referredTableID>
+<keyObject>AD448805-0F9F-2997-FA05-CA9699192FB8</keyObject>
+<referredKeyID>AD448805-0F9F-2997-FA05-CA9699192FB8</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_patio</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

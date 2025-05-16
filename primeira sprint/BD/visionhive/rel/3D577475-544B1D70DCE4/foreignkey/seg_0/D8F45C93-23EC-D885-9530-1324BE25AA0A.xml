@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="D8F45C93-23EC-D885-9530-1324BE25AA0A" containerWithKeyObject="F1309EA6-8472-8DF0-B298-877D22F82F34" localFKIndex="C7BB3149-3541-1123-0303-053AD701B9C0" name="TBL_CATEGORIA_TBL_MOTOCICLETA_FK">
+<createdBy>joaov</createdBy>
+<createdTime>2025-05-16 11:17:17 UTC</createdTime>
+<generatorID>05817572-97AC-7B3D-6EBC-9DF8643D65AE</generatorID>
+<ownerDesignName>visionhive</ownerDesignName>
+<referredTableLongName>TBL_MOTOCICLETA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>9746CB36-30BC-175D-8D4B-EBF550C0D713</referredTableID>
+<keyObject>3B14F5B8-C57F-5155-D916-E40837F6F2AE</keyObject>
+<referredKeyID>3B14F5B8-C57F-5155-D916-E40837F6F2AE</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_moto</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

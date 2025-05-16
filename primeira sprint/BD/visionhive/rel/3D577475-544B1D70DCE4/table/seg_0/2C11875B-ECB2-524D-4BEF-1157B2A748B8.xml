@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2C11875B-ECB2-524D-4BEF-1157B2A748B8" name="TBL_CONTATO">
+<createdBy>joaov</createdBy>
+<createdTime>2025-05-16 11:17:16 UTC</createdTime>
+<generatorID>0CDF3915-8A02-A954-94E1-9C593E9A2D62</generatorID>
+<ownerDesignName>visionhive</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_contato" id="D1BBEFCF-7205-4D30-95EA-D8D6C07A3FC5">
+<createdBy>joaov</createdBy>
+<createdTime>2025-05-16 11:17:16 UTC</createdTime>
+<generatorID>513C9DB1-3941-4B84-6825-2800AE9FDE58</generatorID>
+<ownerDesignName>visionhive</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="valor" id="E276C546-B367-EE50-0B21-BE448EF6567C">
+<createdBy>joaov</createdBy>
+<createdTime>2025-05-16 11:17:16 UTC</createdTime>
+<generatorID>720B437D-0BA2-3A47-50D6-BEBA1BCB88C7</generatorID>
+<ownerDesignName>visionhive</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipo" id="9B4C115B-B7DE-6CA2-1DF1-695BF23F8301">
+<createdBy>joaov</createdBy>
+<createdTime>2025-05-16 11:17:16 UTC</createdTime>
+<generatorID>2F4681F0-F580-BF6A-7BBB-8B2E75B821F9</generatorID>
+<ownerDesignName>visionhive</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="observacao" id="A17536BF-FEC5-F444-ACCC-022F0F03DAF1">
+<createdBy>joaov</createdBy>
+<createdTime>2025-05-16 11:17:16 UTC</createdTime>
+<generatorID>5642A90A-673C-1F3C-D348-A9FB9C0AD197</generatorID>
+<ownerDesignName>visionhive</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E28ADC50-983E-4E1E-2127-E60ADD5771B6" name="TBL_CONTATO_PK">
+<createdBy>joaov</createdBy>
+<createdTime>2025-05-16 11:17:16 UTC</createdTime>
+<generatorID>FC1986B2-C878-42EF-4C6B-70BC79829EBA</generatorID>
+<ownerDesignName>visionhive</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D1BBEFCF-7205-4D30-95EA-D8D6C07A3FC5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CE9CA7FF-A3E3-9990-5C5F-307CF636B460" name="TBL_CONTATO_valor_UN">
+<createdBy>joaov</createdBy>
+<createdTime>2025-05-16 11:17:16 UTC</createdTime>
+<generatorID>2DD0AC1F-7D2D-BD02-65DB-6068E4175B45</generatorID>
+<ownerDesignName>visionhive</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E276C546-B367-EE50-0B21-BE448EF6567C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

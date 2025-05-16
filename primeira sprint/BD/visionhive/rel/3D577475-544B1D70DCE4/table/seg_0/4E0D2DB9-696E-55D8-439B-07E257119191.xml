@@ -1,0 +1,182 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4E0D2DB9-696E-55D8-439B-07E257119191" name="TBL_ENDERECO">
+<createdBy>joaov</createdBy>
+<createdTime>2025-05-16 11:17:16 UTC</createdTime>
+<generatorID>A86DA17F-1790-4E5C-02A7-DC6894941E12</generatorID>
+<ownerDesignName>visionhive</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_endereco" id="3446C606-7A3D-80EF-00CA-5FFC326F787A">
+<createdBy>joaov</createdBy>
+<createdTime>2025-05-16 11:17:16 UTC</createdTime>
+<generatorID>49B1F144-0330-9DD6-4183-BC5399922B45</generatorID>
+<ownerDesignName>visionhive</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="numero" id="9CCB2F03-515A-6E6B-61C4-9F6E49F2D724">
+<createdBy>joaov</createdBy>
+<createdTime>2025-05-16 11:17:16 UTC</createdTime>
+<generatorID>E1C6D407-5E17-04F9-69DD-A71CECC68858</generatorID>
+<ownerDesignName>visionhive</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TBL_FILIAL_id_filial" id="8BDFE211-341A-1979-1BAF-1240BA38FD7A">
+<createdBy>joaov</createdBy>
+<createdTime>2025-05-16 11:17:16 UTC</createdTime>
+<generatorID>ABB41DC9-DB46-777A-667A-7570628242FF</generatorID>
+<ownerDesignName>visionhive</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D219B845-037D-F4E4-EDD7-2C292BDE1C1F" referredColumn="DA3FFFB5-12AD-1B78-7DA1-132E21EB6D05"/>
+</associations>
+</Column>
+<Column name="cep" id="6C77EF61-999D-9DF4-EAE7-73F4749861C3">
+<createdBy>joaov</createdBy>
+<createdTime>2025-05-16 11:17:16 UTC</createdTime>
+<generatorID>362FE6AF-CF29-5642-90BE-FDF86618DA32</generatorID>
+<ownerDesignName>visionhive</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>9</dataTypeSize>
+<ownDataTypeParameters>9,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="logradouro" id="D50AEC7B-47E0-08B3-9A06-1E097CD88793">
+<createdBy>joaov</createdBy>
+<createdTime>2025-05-16 11:17:16 UTC</createdTime>
+<generatorID>57FBA666-49A4-6FBD-E8B3-C063B507F6E0</generatorID>
+<ownerDesignName>visionhive</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="bairro" id="493B1242-8136-D4F4-9908-6EAFF1C4B987">
+<createdBy>joaov</createdBy>
+<createdTime>2025-05-16 11:17:16 UTC</createdTime>
+<generatorID>7DA4EA98-4823-C7B1-6184-E931CA00F9C5</generatorID>
+<ownerDesignName>visionhive</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cidade" id="5936C7B7-5208-339B-278F-1961D0F023C1">
+<createdBy>joaov</createdBy>
+<createdTime>2025-05-16 11:17:16 UTC</createdTime>
+<generatorID>9E133E16-FCE1-D433-2423-25358A881030</generatorID>
+<ownerDesignName>visionhive</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="estado" id="EFC73659-BD94-E722-5F43-2A849989F0CE">
+<createdBy>joaov</createdBy>
+<createdTime>2025-05-16 11:17:16 UTC</createdTime>
+<generatorID>AD4D5C78-A23C-6C95-03D1-849424AF7074</generatorID>
+<ownerDesignName>visionhive</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pais" id="7A3538F3-3183-7366-EE3C-3FE05B65AD6C">
+<createdBy>joaov</createdBy>
+<createdTime>2025-05-16 11:17:16 UTC</createdTime>
+<generatorID>734AF399-13B7-DE99-4B73-649919F6919C</generatorID>
+<ownerDesignName>visionhive</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="complemento" id="079B45A9-0025-E633-1143-AB31FA2AADE1">
+<createdBy>joaov</createdBy>
+<createdTime>2025-05-16 11:17:16 UTC</createdTime>
+<generatorID>FDA131B2-E3E5-8EE6-017D-B303497E2502</generatorID>
+<ownerDesignName>visionhive</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2E0B74CA-8516-7CC6-BAB9-CCCA0B222D96" name="TBL_ENDERECO_PK">
+<createdBy>joaov</createdBy>
+<createdTime>2025-05-16 11:17:16 UTC</createdTime>
+<generatorID>C70937FF-89E3-101B-35C4-5C6769EE4AF6</generatorID>
+<ownerDesignName>visionhive</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3446C606-7A3D-80EF-00CA-5FFC326F787A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D41CE2E3-ED49-80AC-4817-ABDE99505F38" name="TBL_ENDERECO_numero_UN">
+<createdBy>joaov</createdBy>
+<createdTime>2025-05-16 11:17:16 UTC</createdTime>
+<generatorID>EAA0803B-F87B-FC58-A528-2AC52AD42657</generatorID>
+<ownerDesignName>visionhive</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9CCB2F03-515A-6E6B-61C4-9F6E49F2D724"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E3D27295-BCA7-AB95-9C78-3690B017FD35" name="TBL_ENDERECO__IDX">
+<createdBy>joaov</createdBy>
+<createdTime>2025-05-16 11:17:17 UTC</createdTime>
+<ownerDesignName>visionhive</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>5A0F3A4E-BF35-F352-B584-56922D874E5C</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="8BDFE211-341A-1979-1BAF-1240BA38FD7A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E4201514-607E-2819-3EEA-00738FE05C59" name="TBL_ENDERECO_TBL_FILIAL_FK">
+<createdBy>joaov</createdBy>
+<createdTime>2025-05-16 11:17:17 UTC</createdTime>
+<generatorID>5A0F3A4E-BF35-F352-B584-56922D874E5C</generatorID>
+<ownerDesignName>visionhive</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8BDFE211-341A-1979-1BAF-1240BA38FD7A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
