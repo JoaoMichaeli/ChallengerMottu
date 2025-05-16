@@ -1,44 +1,34 @@
-package com.visionhive.visionhive.model;
+package com.visionhive.visionhive.dto;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import jakarta.persistence.*;
+import com.visionhive.visionhive.model.MotorcycleGroup;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import java.util.List;
 
-@Entity
 @Data
-@Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class Motorcycle {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-
+public class MotorcycleDTO {
     @NotBlank(message = "A placa da moto não pode estar em branco")
     @Size(min = 7, max = 7, message = "A placa deve ter exatamente 7 caracteres")
-    private String placa;
+    String placa;
 
     @NotBlank(message = "O chassi da moto não pode estar em branco")
     @Size(min = 17, max = 17, message = "A numeração do chassi não pode estar em branco")
-    private String chassi;
+    String chassi;
 
     @NotBlank(message = "A numeração do motor não pode estar em branco")
     @Size(min = 9, max = 17, message = "A numeração do motor não pode estar em branco")
-    private String numeracaoMotor;
+    String numeracaoMotor;
 
     @NotEmpty(message = "O modelo da moto não pode estar vazio")
-    @ElementCollection
-    private List<MotorcycleGroup> motorcycleModels;
+    List<MotorcycleGroup> motorcycleModels;
 
-    @ManyToOne
-    @JoinColumn(name = "patio_id")
-    private Patio patio;
-
+    @NotNull(message = "O ID do pátio não pode ser nulo")
+    private Long patioId;
 }
