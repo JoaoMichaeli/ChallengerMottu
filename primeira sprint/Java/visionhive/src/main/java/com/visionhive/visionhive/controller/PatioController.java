@@ -4,6 +4,7 @@ import com.visionhive.visionhive.dto.PatioDTO;
 import com.visionhive.visionhive.model.Patio;
 import com.visionhive.visionhive.repository.BranchRepository;
 import com.visionhive.visionhive.repository.PatioRepository;
+import com.visionhive.visionhive.specification.PatioSpecification;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import jakarta.validation.Valid;
@@ -12,6 +13,10 @@ import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.Cacheable;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
+import org.springframework.data.web.PageableDefault;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -23,6 +28,8 @@ import java.util.List;
 @Slf4j
 public class PatioController {
 
+    public record PatioFilters (String nome, Long branchId){}
+
     @Autowired
     private PatioRepository repository;
 
@@ -32,8 +39,14 @@ public class PatioController {
     @GetMapping
     @Operation(summary = "Listar pátios", description = "Retorna um array com todos os pátios de uma filial")
     @Cacheable("patios")
-    public List<Patio> index(){
-        return repository.findAll();
+    public Page<Patio> index(
+            @RequestParam(required = false) String nome,
+            @RequestParam(required = false) Long branchId,
+            @PageableDefault(size = 10, sort = "id", direction = Sort.Direction.DESC) Pageable pageable
+    ){
+        var filters = new PatioFilters(nome, branchId);
+        var specification = PatioSpecification.withFilters(filters);
+        return repository.findAll(specification, pageable);
     }
 
     @PostMapping
