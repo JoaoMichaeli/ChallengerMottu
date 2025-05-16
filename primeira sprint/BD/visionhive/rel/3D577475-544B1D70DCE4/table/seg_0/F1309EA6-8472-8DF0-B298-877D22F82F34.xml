@@ -19,7 +19,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="TBL_MOTOCICLETA_id_moto" id="1CDBA04D-9C16-7881-5AEE-D0133489A647">
+<Column name="id_moto" id="1CDBA04D-9C16-7881-5AEE-D0133489A647">
 <createdBy>joaov</createdBy>
 <createdTime>2025-05-16 11:17:16 UTC</createdTime>
 <generatorID>181EA3B5-918C-78AB-5413-27504B02663F</generatorID>

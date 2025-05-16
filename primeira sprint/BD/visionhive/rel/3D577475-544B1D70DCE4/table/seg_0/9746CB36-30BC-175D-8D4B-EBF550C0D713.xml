@@ -19,7 +19,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="TBL_CATEGORIA_id_categoria" id="CE926609-A469-C855-EA4E-BF33BFC939AE">
+<Column name="id_categoria" id="CE926609-A469-C855-EA4E-BF33BFC939AE">
 <createdBy>joaov</createdBy>
 <createdTime>2025-05-16 11:17:17 UTC</createdTime>
 <generatorID>620F75A5-640F-7C7C-0073-166221E0C45F</generatorID>
@@ -34,7 +34,7 @@
 <colAssociation fkAssociation="A307AE33-66A6-8DDB-821B-98FA6BE6EF8C" referredColumn="CD1ABB8B-47D1-76BE-6EB5-9AA5459D403F"/>
 </associations>
 </Column>
-<Column name="TBL_STATUS_MOTOCICLETA_id_status" id="D69D22C2-83DA-B7E7-0997-0E8CE0E274B5">
+<Column name="id_status" id="D69D22C2-83DA-B7E7-0997-0E8CE0E274B5">
 <createdBy>joaov</createdBy>
 <createdTime>2025-05-16 11:17:17 UTC</createdTime>
 <generatorID>7CE0B522-2AAE-B12B-3C4A-A8C268F768BD</generatorID>

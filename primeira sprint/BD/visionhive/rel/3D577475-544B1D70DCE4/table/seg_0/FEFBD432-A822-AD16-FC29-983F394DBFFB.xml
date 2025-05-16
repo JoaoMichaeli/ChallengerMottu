@@ -19,7 +19,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="TBL_FILIAL_id_filial" id="478C4713-63C2-8E11-F38A-88CAAB6F3F69">
+<Column name="id_filial" id="478C4713-63C2-8E11-F38A-88CAAB6F3F69">
 <createdBy>joaov</createdBy>
 <createdTime>2025-05-16 11:17:17 UTC</createdTime>
 <generatorID>13B77F39-8534-9B67-F1BC-AA1D519FB361</generatorID>

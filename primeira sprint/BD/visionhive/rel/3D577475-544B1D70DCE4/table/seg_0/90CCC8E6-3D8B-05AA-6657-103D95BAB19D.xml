@@ -31,7 +31,7 @@
 <ownDataTypeParameters>18,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="TBL_ENDERECO_id_endereco" id="17D8FA6C-EA7E-D3A8-9C31-F28ACD673886">
+<Column name="id_endereco" id="17D8FA6C-EA7E-D3A8-9C31-F28ACD673886">
 <createdBy>joaov</createdBy>
 <createdTime>2025-05-16 11:17:17 UTC</createdTime>
 <generatorID>8A53B426-C897-FABC-045A-3A893B9D91EF</generatorID>
@@ -46,7 +46,7 @@
 <colAssociation fkAssociation="A6EFD3AD-37A0-410B-0551-9E9BE26BD31E" referredColumn="3446C606-7A3D-80EF-00CA-5FFC326F787A"/>
 </associations>
 </Column>
-<Column name="TBL_CONTATO_id_contato" id="2A23DD18-3A37-62E3-DE35-13F36EC5FF87">
+<Column name="id_contato" id="2A23DD18-3A37-62E3-DE35-13F36EC5FF87">
 <createdBy>joaov</createdBy>
 <createdTime>2025-05-16 11:17:17 UTC</createdTime>
 <generatorID>A28F1E79-3810-A3B7-F660-CEEB1CC0F42B</generatorID>
