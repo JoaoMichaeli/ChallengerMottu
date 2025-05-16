@@ -221,6 +221,8 @@ BEGIN
   END LOOP;
 END;
 
+COMMIT;
+
 -- Quantidade de motos por status
 BEGIN
   FOR rec IN (
@@ -235,6 +237,8 @@ BEGIN
   END LOOP;
 END;
 
+COMMIT;
+
 -- Bloco que mostra valor atual, anterior e próximo de uma coluna
 BEGIN
   FOR i IN (
@@ -247,6 +251,8 @@ BEGIN
     DBMS_OUTPUT.PUT_LINE('Anterior: ' || i.anterior || ' | Atual: ' || i.atual || ' | Próximo: ' || i.proximo);
   END LOOP;
 END;
+
+COMMIT;
 
 -- DROPS DAS TABELAS --
 
