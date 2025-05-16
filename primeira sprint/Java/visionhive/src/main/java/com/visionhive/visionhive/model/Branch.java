@@ -27,6 +27,9 @@ public class Branch {
     @NotBlank(message = "O bairro não pode estar em branco")
     private String bairro;
 
+    @NotBlank(message = "O cnpj não pode estar em branco")
+    private String cnpj;
+
     @OneToMany(mappedBy = "branch", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     private List<Patio> patios = new ArrayList<>();
 }
