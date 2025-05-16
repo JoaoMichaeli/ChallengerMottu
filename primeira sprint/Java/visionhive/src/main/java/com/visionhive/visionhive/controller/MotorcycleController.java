@@ -2,6 +2,7 @@ package com.visionhive.visionhive.controller;
 
 import com.visionhive.visionhive.model.Motorcycle;
 import com.visionhive.visionhive.repository.MotorcycleRepository;
+import com.visionhive.visionhive.specification.MotorcycleSpecification;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import jakarta.validation.Valid;
@@ -10,25 +11,37 @@ import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.Cacheable;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
+import org.springframework.data.web.PageableDefault;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
-import java.util.List;
 
 @RestController
 @RequestMapping("motorcycles")
 @Slf4j
 public class MotorcycleController {
 
+    public record MotorcycleFilters (String placa, String chassi, String numeracaoMotor){}
+
     @Autowired
     private MotorcycleRepository repository;
 
     @GetMapping
-    @Operation(summary = "Listar todas as motocicletas", description = "Retorna um array com todas as motos")
+    @Operation(summary = "Listar todas as motocicletas com filtros e paginação", description = "Retorna uma lista paginada de motocicletas com filtros opcionais")
     @Cacheable("motorcycles")
-    public List<Motorcycle> index(){
-        return repository.findAll();
+    public Page<Motorcycle> index(
+            @RequestParam(required = false) String placa,
+            @RequestParam(required = false) String chassi,
+            @RequestParam(required = false) String numeracaoMotor,
+            @PageableDefault(size = 10, sort = "id", direction = Sort.Direction.DESC) Pageable pageable
+    ) {
+        var filters = new MotorcycleFilters(placa, chassi, numeracaoMotor);
+        var specification = MotorcycleSpecification.withFilters(filters);
+        return repository.findAll(specification, pageable);
     }
 
     @PostMapping
