@@ -210,30 +210,39 @@ SET SERVEROUTPUT ON;
 BEGIN
   FOR rec IN (
     SELECT f.nome AS filial,
-           COUNT(m.id_movimentacao) AS total_movimentacoes
+           COUNT(m.id_movimentacao) AS total_movimentacoes,
+           MAX(mc.modelo) AS modelo_mais_recente
     FROM tbl_filial f
     JOIN tbl_patio p ON p.id_filial = f.id_filial
     JOIN tbl_movimentacao m ON m.id_patio = p.id_patio
+    JOIN tbl_motocicleta mc ON mc.id_moto = m.id_moto
     GROUP BY f.nome
     ORDER BY total_movimentacoes DESC
   ) LOOP
-    DBMS_OUTPUT.PUT_LINE('Filial: ' || rec.filial || ' - Movimentações: ' || rec.total_movimentacoes);
+    DBMS_OUTPUT.PUT_LINE('Filial: ' || rec.filial || 
+                         ' - Total Movimentações: ' || rec.total_movimentacoes || 
+                         ' - Moto (última registrada): ' || rec.modelo_mais_recente);
   END LOOP;
 END;
 
 COMMIT;
 
--- Quantidade de motos por status
+-- Quantidade de motos por status e categoria
 BEGIN
   FOR rec IN (
     SELECT s.descricao AS status,
+           c.descricao AS categoria,
            COUNT(m.id_moto) AS quantidade
     FROM tbl_status_motocicleta s
     JOIN tbl_motocicleta m ON m.id_status = s.id_status
-    GROUP BY s.descricao
-    ORDER BY quantidade DESC
+    JOIN tbl_categoria c ON c.id_categoria = m.id_categoria
+    JOIN tbl_filial f ON f.id_filial = c.id_moto
+    GROUP BY s.descricao, c.descricao
+    ORDER BY s.descricao, quantidade DESC
   ) LOOP
-    DBMS_OUTPUT.PUT_LINE('Status: ' || rec.status || ' - Quantidade de Motos: ' || rec.quantidade);
+    DBMS_OUTPUT.PUT_LINE('Status: ' || rec.status || 
+                         ' | Categoria: ' || rec.categoria || 
+                         ' | Quantidade: ' || rec.quantidade);
   END LOOP;
 END;
 
