@@ -41,20 +41,6 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id_patio" id="F48B737C-082B-7811-E556-977F8CD03E13">
-<createdBy>joaov</createdBy>
-<createdTime>2025-05-13 20:08:20 UTC</createdTime>
-<generatorID>21BD3454-36AC-8420-0908-017DD02CF2A1</generatorID>
-<ownerDesignName>visionhive</ownerDesignName>
-<engineerTo>
-<item key="3D577475-564B-A625-2483-544B1D70DCE4" value="true"/>
-</engineerTo>
-<referedAttribute>AD8E79B8-5A73-237F-88F2-737B49D8FA9C</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="data_entrada" id="929A9DF8-9546-E808-8BB5-158B778952A2">
 <createdBy>joaov</createdBy>
 <createdTime>2025-05-13 19:57:34 UTC</createdTime>
@@ -104,19 +90,6 @@
 <dataTypeSize>100</dataTypeSize>
 <ownDataTypeParameters>100,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="motivo_movimentacao" id="773F226B-8A27-7605-6D2F-132586C012AB">
-<createdBy>joaov</createdBy>
-<createdTime>2025-05-13 19:58:03 UTC</createdTime>
-<ownerDesignName>visionhive</ownerDesignName>
-<engineerTo>
-<item key="3D577475-564B-A625-2483-544B1D70DCE4" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>50</dataTypeSize>
-<ownDataTypeParameters>50,,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="observacao" id="D57ACB62-5B43-5505-5F95-83942CC818DA">
 <createdBy>joaov</createdBy>
 <createdTime>2025-05-13 19:58:57 UTC</createdTime>
@@ -130,6 +103,48 @@
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>250</dataTypeSize>
 <ownDataTypeParameters>250,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_categoria" id="074CC112-B9CA-A21D-378B-DFB0491333F3">
+<createdBy>labsfiap</createdBy>
+<createdTime>2025-05-20 14:31:25 UTC</createdTime>
+<generatorID>6CDCE1A9-67DB-6605-36E3-6EF5251077BA</generatorID>
+<ownerDesignName>visionhive</ownerDesignName>
+<engineerTo>
+<item key="3D577475-564B-A625-2483-544B1D70DCE4" value="true"/>
+</engineerTo>
+<referedAttribute>00419848-D435-5381-6D3F-9FC38E7EDB1A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_filial" id="D4A68757-FC52-7EA5-A2AB-E9C75AC421E7">
+<createdBy>labsfiap</createdBy>
+<createdTime>2025-05-20 14:34:49 UTC</createdTime>
+<generatorID>D571817E-7A35-C558-529F-2DEAF3A306AF</generatorID>
+<ownerDesignName>visionhive</ownerDesignName>
+<engineerTo>
+<item key="3D577475-564B-A625-2483-544B1D70DCE4" value="true"/>
+</engineerTo>
+<referedAttribute>70B2C708-16EB-8F5D-083F-020AD950597E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_motivo_movimentacao" id="84975B6F-DD60-D598-0756-5BFC8B6DA206">
+<createdBy>labsfiap</createdBy>
+<createdTime>2025-05-20 14:36:38 UTC</createdTime>
+<generatorID>306D3CA0-6437-C553-D6A5-E65DA09154AD</generatorID>
+<ownerDesignName>visionhive</ownerDesignName>
+<engineerTo>
+<item key="3D577475-564B-A625-2483-544B1D70DCE4" value="true"/>
+</engineerTo>
+<referedAttribute>9A2A6298-D574-EA5E-EB90-71F2FA16E8AF</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
