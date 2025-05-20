@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7D1120D2-5CA8-B7A8-0129-C59D9773A019" name="TBL_CONTATO">
+<createdBy>joaov</createdBy>
+<createdTime>2025-05-20 18:57:18 UTC</createdTime>
+<generatorID>0CDF3915-8A02-A954-94E1-9C593E9A2D62</generatorID>
+<ownerDesignName>visionhive</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_contato" id="AC04BFBC-7EBA-F6D4-D4BE-7F4D74983CA4">
+<createdBy>joaov</createdBy>
+<createdTime>2025-05-20 18:57:18 UTC</createdTime>
+<generatorID>513C9DB1-3941-4B84-6825-2800AE9FDE58</generatorID>
+<ownerDesignName>visionhive</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="valor" id="6A8A2066-A8E5-86F2-1E14-929200145538">
+<createdBy>joaov</createdBy>
+<createdTime>2025-05-20 18:57:18 UTC</createdTime>
+<generatorID>720B437D-0BA2-3A47-50D6-BEBA1BCB88C7</generatorID>
+<ownerDesignName>visionhive</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="observacao" id="9177B456-E451-0645-7C26-014ED209D401">
+<createdBy>joaov</createdBy>
+<createdTime>2025-05-20 18:57:18 UTC</createdTime>
+<generatorID>5642A90A-673C-1F3C-D348-A9FB9C0AD197</generatorID>
+<ownerDesignName>visionhive</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_filial" id="ED1D10C7-A958-A036-27AC-95B253A8109F">
+<createdBy>joaov</createdBy>
+<createdTime>2025-05-20 18:57:18 UTC</createdTime>
+<generatorID>2588F3B2-7425-2DBA-C89B-6EDACCEC8E4E</generatorID>
+<ownerDesignName>visionhive</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="725EDD80-ABB0-B8BA-8814-41D978944C7B" referredColumn="CB23440E-74B5-AF2F-51E2-0676E5A11D2E"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9E2CD07A-6F49-9FCC-DEFF-38236CA4DE47" name="TBL_CONTATO_PK">
+<createdBy>joaov</createdBy>
+<createdTime>2025-05-20 18:57:18 UTC</createdTime>
+<generatorID>FC1986B2-C878-42EF-4C6B-70BC79829EBA</generatorID>
+<ownerDesignName>visionhive</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AC04BFBC-7EBA-F6D4-D4BE-7F4D74983CA4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BB5DD3EE-D51B-5617-E902-C90C2E361EF0" name="TBL_CONTATO_valor_UN">
+<createdBy>joaov</createdBy>
+<createdTime>2025-05-20 18:57:18 UTC</createdTime>
+<generatorID>2DD0AC1F-7D2D-BD02-65DB-6068E4175B45</generatorID>
+<ownerDesignName>visionhive</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6A8A2066-A8E5-86F2-1E14-929200145538"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B46D8093-AB19-E528-2420-7434013B328F" name="TBL_CONTATO_TBL_FILIAL_FK">
+<createdBy>joaov</createdBy>
+<createdTime>2025-05-20 18:57:18 UTC</createdTime>
+<generatorID>3E8E59C6-C3B3-ED44-F15A-E83B6199B1FC</generatorID>
+<ownerDesignName>visionhive</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ED1D10C7-A958-A036-27AC-95B253A8109F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

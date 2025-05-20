@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="AB07DE81-7F9F-6789-7189-FCE9ABF527F6" name="TBL_CATEGORIA">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="30F86A6F-4654-9849-769C-F9CD047CA194" name="TBL_PAIS">
 <createdBy>joaov</createdBy>
-<createdTime>2025-05-06 20:09:55 UTC</createdTime>
+<createdTime>2025-05-20 18:36:08 UTC</createdTime>
 <ownerDesignName>visionhive</ownerDesignName>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -12,18 +12,18 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="id_categoria" id="0A21CC0E-6ABF-8C1A-E852-F006CBDFA590">
+<Attribute name="id_pais" id="30FD44E6-1D4D-17B8-AAD1-266B655B39C3">
 <createdBy>joaov</createdBy>
-<createdTime>2025-05-06 20:10:16 UTC</createdTime>
+<createdTime>2025-05-20 18:36:17 UTC</createdTime>
 <ownerDesignName>visionhive</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="descricao" id="ACE7457E-1C08-2EA8-17E7-907F084FB225">
+<Attribute name="nome" id="01959400-806A-C1C8-26C2-7FA783D8ACD7">
 <createdBy>joaov</createdBy>
-<createdTime>2025-05-13 18:58:28 UTC</createdTime>
+<createdTime>2025-05-20 18:36:20 UTC</createdTime>
 <ownerDesignName>visionhive</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -33,13 +33,13 @@
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="29AFEBDE-67C9-8FE7-D477-E976B158691F" name="TBL_CATEGORIA PK">
+<identifier id="3AEF3BDB-4022-6E75-3953-F70889002D95" name="TBL_PAIS PK">
 <createdBy>joaov</createdBy>
-<createdTime>2025-05-06 20:10:25 UTC</createdTime>
+<createdTime>2025-05-20 18:36:26 UTC</createdTime>
 <ownerDesignName>visionhive</ownerDesignName>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>0A21CC0E-6ABF-8C1A-E852-F006CBDFA590</attributeRef>
+<attributeRef>30FD44E6-1D4D-17B8-AAD1-266B655B39C3</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

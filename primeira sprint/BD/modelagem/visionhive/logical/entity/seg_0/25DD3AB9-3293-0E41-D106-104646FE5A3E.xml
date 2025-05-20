@@ -3,9 +3,6 @@
 <createdBy>joaov</createdBy>
 <createdTime>2025-05-06 19:13:10 UTC</createdTime>
 <ownerDesignName>visionhive</ownerDesignName>
-<engineerTo>
-<item key="3D577475-564B-A625-2483-544B1D70DCE4" value="true"/>
-</engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
 <fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
@@ -19,9 +16,6 @@
 <createdBy>joaov</createdBy>
 <createdTime>2025-05-06 19:13:30 UTC</createdTime>
 <ownerDesignName>visionhive</ownerDesignName>
-<engineerTo>
-<item key="3D577475-564B-A625-2483-544B1D70DCE4" value="true"/>
-</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -32,9 +26,6 @@
 <createdTime>2025-05-13 19:47:27 UTC</createdTime>
 <generatorID>9258C67F-1CE7-0B0B-804C-9DC869CA6FE0</generatorID>
 <ownerDesignName>visionhive</ownerDesignName>
-<engineerTo>
-<item key="3D577475-564B-A625-2483-544B1D70DCE4" value="true"/>
-</engineerTo>
 <referedAttribute>99C75B55-EEF4-2BC0-CED4-CFA14593D4F9</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -45,9 +36,6 @@
 <createdBy>joaov</createdBy>
 <createdTime>2025-05-06 19:13:30 UTC</createdTime>
 <ownerDesignName>visionhive</ownerDesignName>
-<engineerTo>
-<item key="3D577475-564B-A625-2483-544B1D70DCE4" value="true"/>
-</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -58,9 +46,6 @@
 <createdBy>joaov</createdBy>
 <createdTime>2025-05-06 19:13:30 UTC</createdTime>
 <ownerDesignName>visionhive</ownerDesignName>
-<engineerTo>
-<item key="3D577475-564B-A625-2483-544B1D70DCE4" value="true"/>
-</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -71,38 +56,30 @@
 <createdBy>joaov</createdBy>
 <createdTime>2025-05-16 11:12:04 UTC</createdTime>
 <ownerDesignName>visionhive</ownerDesignName>
-<engineerTo>
-<item key="3D577475-564B-A625-2483-544B1D70DCE4" value="true"/>
-</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>17</dataTypeSize>
 <ownDataTypeParameters>17,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id_categoria" id="00419848-D435-5381-6D3F-9FC38E7EDB1A">
-<createdBy>labsfiap</createdBy>
-<createdTime>2025-05-20 14:31:25 UTC</createdTime>
-<generatorID>C3CE5F2D-E87F-FC3C-3251-B09BB6721822</generatorID>
-<ownerDesignName>visionhive</ownerDesignName>
-<engineerTo>
-<item key="3D577475-564B-A625-2483-544B1D70DCE4" value="true"/>
-</engineerTo>
-<referedAttribute>0A21CC0E-6ABF-8C1A-E852-F006CBDFA590</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="id_modelo" id="F9CF9683-E857-1E10-A688-83A98E062EB1">
 <createdBy>labsfiap</createdBy>
 <createdTime>2025-05-20 14:38:14 UTC</createdTime>
 <generatorID>3854C8E2-E055-3C15-C40C-F03BF32C79C4</generatorID>
 <ownerDesignName>visionhive</ownerDesignName>
-<engineerTo>
-<item key="3D577475-564B-A625-2483-544B1D70DCE4" value="true"/>
-</engineerTo>
 <referedAttribute>29E484B5-D44F-4B62-A0C7-0702D8B1FFFD</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_categoria" id="5F0AA22E-6C27-51AF-AB41-31AB984AD7F0">
+<createdBy>joaov</createdBy>
+<createdTime>2025-05-20 18:48:16 UTC</createdTime>
+<generatorID>DE5F9F9C-7C57-4823-4407-B6F5E951BFBD</generatorID>
+<ownerDesignName>visionhive</ownerDesignName>
+<referedAttribute>0A21CC0E-6ABF-8C1A-E852-F006CBDFA590</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
@@ -113,26 +90,20 @@
 <createdBy>joaov</createdBy>
 <createdTime>2025-05-06 19:14:02 UTC</createdTime>
 <ownerDesignName>visionhive</ownerDesignName>
-<engineerTo>
-<item key="3D577475-564B-A625-2483-544B1D70DCE4" value="true"/>
-</engineerTo>
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>26FD6F11-7064-58E4-68EE-8294666F5598</attributeRef>
-<attributeRef>00419848-D435-5381-6D3F-9FC38E7EDB1A</attributeRef>
 </usedAttributes>
 </identifier>
 <identifier id="E9CADE11-71B3-3110-6F19-782814165F8F" name="TBL_MOTO_UN">
 <createdBy>joaov</createdBy>
 <createdTime>2025-05-13 19:19:27 UTC</createdTime>
 <ownerDesignName>visionhive</ownerDesignName>
-<engineerTo>
-<item key="3D577475-564B-A625-2483-544B1D70DCE4" value="true"/>
-</engineerTo>
-<newElementsIDs>536669FC-A181-9D5E-ABC6-04AD4B0FC8A1,3250D18D-A96D-59CF-6465-BECE6E8F0DBC</newElementsIDs>
+<newElementsIDs>536669FC-A181-9D5E-ABC6-04AD4B0FC8A1,3250D18D-A96D-59CF-6465-BECE6E8F0DBC,92FC6888-37A7-AF5A-823C-89593D994ED6</newElementsIDs>
 <usedAttributes>
 <attributeRef>536669FC-A181-9D5E-ABC6-04AD4B0FC8A1</attributeRef>
 <attributeRef>3250D18D-A96D-59CF-6465-BECE6E8F0DBC</attributeRef>
+<attributeRef>92FC6888-37A7-AF5A-823C-89593D994ED6</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

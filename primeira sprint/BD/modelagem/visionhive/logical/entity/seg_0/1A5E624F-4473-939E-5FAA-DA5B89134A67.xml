@@ -3,9 +3,6 @@
 <createdBy>joaov</createdBy>
 <createdTime>2025-05-06 19:46:12 UTC</createdTime>
 <ownerDesignName>visionhive</ownerDesignName>
-<engineerTo>
-<item key="3D577475-564B-A625-2483-544B1D70DCE4" value="true"/>
-</engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
 <fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
@@ -19,9 +16,6 @@
 <createdBy>joaov</createdBy>
 <createdTime>2025-05-06 19:46:17 UTC</createdTime>
 <ownerDesignName>visionhive</ownerDesignName>
-<engineerTo>
-<item key="3D577475-564B-A625-2483-544B1D70DCE4" value="true"/>
-</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -31,9 +25,6 @@
 <createdBy>joaov</createdBy>
 <createdTime>2025-05-06 19:46:18 UTC</createdTime>
 <ownerDesignName>visionhive</ownerDesignName>
-<engineerTo>
-<item key="3D577475-564B-A625-2483-544B1D70DCE4" value="true"/>
-</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -45,24 +36,7 @@
 <createdTime>2025-05-13 19:08:46 UTC</createdTime>
 <generatorID>5A0F3A4E-BF35-F352-B584-56922D874E5C</generatorID>
 <ownerDesignName>visionhive</ownerDesignName>
-<engineerTo>
-<item key="3D577475-564B-A625-2483-544B1D70DCE4" value="true"/>
-</engineerTo>
 <referedAttribute>49B1F144-0330-9DD6-4183-BC5399922B45</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="id_contato" id="A28F1E79-3810-A3B7-F660-CEEB1CC0F42B">
-<createdBy>joaov</createdBy>
-<createdTime>2025-05-13 19:16:27 UTC</createdTime>
-<generatorID>42F44859-3F49-5676-8B6B-EFEC47FBEB1C</generatorID>
-<ownerDesignName>visionhive</ownerDesignName>
-<engineerTo>
-<item key="3D577475-564B-A625-2483-544B1D70DCE4" value="true"/>
-</engineerTo>
-<referedAttribute>513C9DB1-3941-4B84-6825-2800AE9FDE58</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -72,9 +46,6 @@
 <createdBy>joaov</createdBy>
 <createdTime>2025-05-06 19:46:17 UTC</createdTime>
 <ownerDesignName>visionhive</ownerDesignName>
-<engineerTo>
-<item key="3D577475-564B-A625-2483-544B1D70DCE4" value="true"/>
-</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -85,22 +56,16 @@
 <createdBy>joaov</createdBy>
 <createdTime>2025-05-13 19:11:43 UTC</createdTime>
 <ownerDesignName>visionhive</ownerDesignName>
-<engineerTo>
-<item key="3D577475-564B-A625-2483-544B1D70DCE4" value="true"/>
-</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>20</dataTypeSize>
-<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="responsavel" id="2208D842-64C3-0C65-2D60-04505DF6D29C">
 <createdBy>joaov</createdBy>
 <createdTime>2025-05-13 19:12:11 UTC</createdTime>
 <ownerDesignName>visionhive</ownerDesignName>
-<engineerTo>
-<item key="3D577475-564B-A625-2483-544B1D70DCE4" value="true"/>
-</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -113,9 +78,6 @@
 <createdBy>joaov</createdBy>
 <createdTime>2025-05-06 19:46:24 UTC</createdTime>
 <ownerDesignName>visionhive</ownerDesignName>
-<engineerTo>
-<item key="3D577475-564B-A625-2483-544B1D70DCE4" value="true"/>
-</engineerTo>
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>70B2C708-16EB-8F5D-083F-020AD950597E</attributeRef>
@@ -125,9 +87,6 @@
 <createdBy>joaov</createdBy>
 <createdTime>2025-05-13 19:18:38 UTC</createdTime>
 <ownerDesignName>visionhive</ownerDesignName>
-<engineerTo>
-<item key="3D577475-564B-A625-2483-544B1D70DCE4" value="true"/>
-</engineerTo>
 <newElementsIDs>4AEDEC2E-E452-7559-43F1-5CEEA02E68CF</newElementsIDs>
 <usedAttributes>
 <attributeRef>4AEDEC2E-E452-7559-43F1-5CEEA02E68CF</attributeRef>

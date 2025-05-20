@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0CDF3915-8A02-A954-94E1-9C593E9A2D62" name="TBL_CONTATO">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F855EE39-BCD2-3E1D-07DD-75C5DC745AC1" name="TBL_ESTADO">
 <createdBy>joaov</createdBy>
-<createdTime>2025-05-13 19:13:14 UTC</createdTime>
+<createdTime>2025-05-20 18:36:45 UTC</createdTime>
 <ownerDesignName>visionhive</ownerDesignName>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -12,18 +12,18 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="id_contato" id="513C9DB1-3941-4B84-6825-2800AE9FDE58">
+<Attribute name="id_estado" id="4CFDEF27-FF38-DAB2-49B6-C0444BD858B9">
 <createdBy>joaov</createdBy>
-<createdTime>2025-05-13 19:14:18 UTC</createdTime>
+<createdTime>2025-05-20 18:36:53 UTC</createdTime>
 <ownerDesignName>visionhive</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="valor" id="720B437D-0BA2-3A47-50D6-BEBA1BCB88C7">
+<Attribute name="nome" id="3DBB00FD-F0F8-EFC5-E233-A5E956B33F7D">
 <createdBy>joaov</createdBy>
-<createdTime>2025-05-13 19:14:18 UTC</createdTime>
+<createdTime>2025-05-20 18:36:53 UTC</createdTime>
 <ownerDesignName>visionhive</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -31,23 +31,22 @@
 <dataTypeSize>100</dataTypeSize>
 <ownDataTypeParameters>100,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="observacao" id="5642A90A-673C-1F3C-D348-A9FB9C0AD197">
+<Attribute name="uf" id="BA206A65-20FC-7671-855C-FE0EE200BC42">
 <createdBy>joaov</createdBy>
-<createdTime>2025-05-13 19:14:18 UTC</createdTime>
+<createdTime>2025-05-20 18:36:53 UTC</createdTime>
 <ownerDesignName>visionhive</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>100</dataTypeSize>
-<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id_filial" id="2588F3B2-7425-2DBA-C89B-6EDACCEC8E4E">
+<Attribute name="id_pais" id="C800C2C2-871A-AB4D-BD31-4DBA0828AE1A">
 <createdBy>joaov</createdBy>
-<createdTime>2025-05-20 18:52:12 UTC</createdTime>
-<generatorID>3E8E59C6-C3B3-ED44-F15A-E83B6199B1FC</generatorID>
+<createdTime>2025-05-20 18:40:25 UTC</createdTime>
+<generatorID>7BE114EB-7A47-E5B7-7D8F-BE4C45EE0850</generatorID>
 <ownerDesignName>visionhive</ownerDesignName>
-<referedAttribute>70B2C708-16EB-8F5D-083F-020AD950597E</referedAttribute>
+<referedAttribute>30FD44E6-1D4D-17B8-AAD1-266B655B39C3</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -55,22 +54,13 @@
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="FC1986B2-C878-42EF-4C6B-70BC79829EBA" name="TBL_TELEFONE PK">
+<identifier id="D2ED1A77-D474-9F6C-BF52-AA45BC12526C" name="TBL_ESTADO PK">
 <createdBy>joaov</createdBy>
-<createdTime>2025-05-13 19:14:39 UTC</createdTime>
+<createdTime>2025-05-20 18:37:01 UTC</createdTime>
 <ownerDesignName>visionhive</ownerDesignName>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>513C9DB1-3941-4B84-6825-2800AE9FDE58</attributeRef>
-</usedAttributes>
-</identifier>
-<identifier id="2DD0AC1F-7D2D-BD02-65DB-6068E4175B45" name="TBL_TELEFONE_UN">
-<createdBy>joaov</createdBy>
-<createdTime>2025-05-13 19:17:14 UTC</createdTime>
-<ownerDesignName>visionhive</ownerDesignName>
-<newElementsIDs>720B437D-0BA2-3A47-50D6-BEBA1BCB88C7</newElementsIDs>
-<usedAttributes>
-<attributeRef>720B437D-0BA2-3A47-50D6-BEBA1BCB88C7</attributeRef>
+<attributeRef>4CFDEF27-FF38-DAB2-49B6-C0444BD858B9</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

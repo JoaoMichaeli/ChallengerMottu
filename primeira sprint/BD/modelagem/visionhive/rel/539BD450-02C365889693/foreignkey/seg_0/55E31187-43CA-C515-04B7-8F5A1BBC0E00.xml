@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="55E31187-43CA-C515-04B7-8F5A1BBC0E00" containerWithKeyObject="3C9222DA-1BE1-FE7C-0BBB-6535925C9FF2" localFKIndex="C51A48F2-A3DB-6850-D01A-2F93E38C86BD" name="TBL_TIPO_CONTATO_TBL_CONTATO_FK">
+<createdBy>joaov</createdBy>
+<createdTime>2025-05-20 18:57:18 UTC</createdTime>
+<generatorID>7E0842B1-AD21-61B5-513B-FD6AADFF6C87</generatorID>
+<ownerDesignName>visionhive</ownerDesignName>
+<referredTableLongName>TBL_CONTATO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>7D1120D2-5CA8-B7A8-0129-C59D9773A019</referredTableID>
+<keyObject>9E2CD07A-6F49-9FCC-DEFF-38236CA4DE47</keyObject>
+<referredKeyID>9E2CD07A-6F49-9FCC-DEFF-38236CA4DE47</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_contato</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

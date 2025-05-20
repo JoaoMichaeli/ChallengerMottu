@@ -1,0 +1,173 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="44DBF07C-072C-0067-630D-5C59A192BF66" name="TBL_MOVIMENTACAO">
+<createdBy>joaov</createdBy>
+<createdTime>2025-05-20 18:57:18 UTC</createdTime>
+<generatorID>A54CE702-5FFB-A730-AA04-F8EBBF557133</generatorID>
+<ownerDesignName>visionhive</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_movimentacao" id="1B7A60EB-3D1A-0D3B-1AD4-AB57AF803D4D">
+<createdBy>joaov</createdBy>
+<createdTime>2025-05-20 18:57:18 UTC</createdTime>
+<generatorID>1658E452-1926-8531-0BAD-98488D12F925</generatorID>
+<ownerDesignName>visionhive</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_moto" id="6A031B86-5F72-712B-7125-22CE858D802E">
+<createdBy>joaov</createdBy>
+<createdTime>2025-05-20 18:57:18 UTC</createdTime>
+<generatorID>3DBC31E6-17A0-50CF-3F3C-DDADE2714F8A</generatorID>
+<ownerDesignName>visionhive</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8FE9EC3C-8413-7207-9787-92EFBB5DD2E7" referredColumn="954FE713-C935-5AD2-9116-D061239DC246"/>
+</associations>
+</Column>
+<Column name="data_entrada" id="C3A86C73-38B1-6087-F2BA-7A74A3C68951">
+<createdBy>joaov</createdBy>
+<createdTime>2025-05-20 18:57:18 UTC</createdTime>
+<generatorID>929A9DF8-9546-E808-8BB5-158B778952A2</generatorID>
+<ownerDesignName>visionhive</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_saida" id="C8F1BFA4-9B8E-BCAF-8AA5-51BC956D7409">
+<createdBy>joaov</createdBy>
+<createdTime>2025-05-20 18:57:18 UTC</createdTime>
+<generatorID>79BBBABE-9AC4-CE6B-17BE-380CD6780788</generatorID>
+<ownerDesignName>visionhive</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_movimentacao" id="2FC10A8A-3E0F-14FB-EAC4-4366D44BE167">
+<createdBy>joaov</createdBy>
+<createdTime>2025-05-20 18:57:18 UTC</createdTime>
+<generatorID>6A6FCFEC-1B48-43B3-D45B-E60385555AE1</generatorID>
+<ownerDesignName>visionhive</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="responsavel" id="EAF566EF-777D-A48C-928C-B10F916E5798">
+<createdBy>joaov</createdBy>
+<createdTime>2025-05-20 18:57:18 UTC</createdTime>
+<generatorID>97B5D47C-28DC-4B0E-051F-9AE03355C862</generatorID>
+<ownerDesignName>visionhive</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="observacao" id="1DBE686D-E51F-212B-388B-090B0E47AF74">
+<createdBy>joaov</createdBy>
+<createdTime>2025-05-20 18:57:18 UTC</createdTime>
+<generatorID>D57ACB62-5B43-5505-5F95-83942CC818DA</generatorID>
+<ownerDesignName>visionhive</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250</dataTypeSize>
+<ownDataTypeParameters>250,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_filial" id="CA227ED0-93C3-1893-A447-209BC8C00303">
+<createdBy>joaov</createdBy>
+<createdTime>2025-05-20 18:57:18 UTC</createdTime>
+<generatorID>D4A68757-FC52-7EA5-A2AB-E9C75AC421E7</generatorID>
+<ownerDesignName>visionhive</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7F2DA7F8-6416-306C-EC05-DEF72B5FAE48" referredColumn="CB23440E-74B5-AF2F-51E2-0676E5A11D2E"/>
+</associations>
+</Column>
+<Column name="id_motivo_movimentacao" id="01E7B374-9064-E5EE-E4C5-002A35221702">
+<createdBy>joaov</createdBy>
+<createdTime>2025-05-20 18:57:18 UTC</createdTime>
+<generatorID>84975B6F-DD60-D598-0756-5BFC8B6DA206</generatorID>
+<ownerDesignName>visionhive</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D7646CF9-2265-37B5-F118-1B20B25C3370" referredColumn="ACEB81A2-165A-4A35-405B-E08232CFA2FD"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="39DF16C6-3F9E-43F0-15D9-4C541765911D" name="TBL_MOVIMENTACAO_PK">
+<createdBy>joaov</createdBy>
+<createdTime>2025-05-20 18:57:18 UTC</createdTime>
+<generatorID>02C090CC-3BB2-7C18-91D0-20108E367F8F</generatorID>
+<ownerDesignName>visionhive</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1B7A60EB-3D1A-0D3B-1AD4-AB57AF803D4D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="636A1C27-70DD-FFA8-8B6E-7A5EF30AAF3A" name="TBL_MOVIMENTACAO_TBL_FILIAL_FK">
+<createdBy>joaov</createdBy>
+<createdTime>2025-05-20 18:57:18 UTC</createdTime>
+<generatorID>D571817E-7A35-C558-529F-2DEAF3A306AF</generatorID>
+<ownerDesignName>visionhive</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CA227ED0-93C3-1893-A447-209BC8C00303"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EE47A599-9C45-8E93-3A7F-A4B9DAABC772" name="TBL_MOVIMENTACAO_TBL_MOTIVO_MOVIMENTACAO_FK">
+<createdBy>joaov</createdBy>
+<createdTime>2025-05-20 18:57:18 UTC</createdTime>
+<generatorID>306D3CA0-6437-C553-D6A5-E65DA09154AD</generatorID>
+<ownerDesignName>visionhive</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="01E7B374-9064-E5EE-E4C5-002A35221702"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C5832B28-C890-3DAE-9712-1580C1193B3D" name="TBL_MOVIMENTACAO_TBL_MOTOCICLETA_FK">
+<createdBy>joaov</createdBy>
+<createdTime>2025-05-20 18:57:18 UTC</createdTime>
+<generatorID>6CDCE1A9-67DB-6605-36E3-6EF5251077BA</generatorID>
+<ownerDesignName>visionhive</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6A031B86-5F72-712B-7125-22CE858D802E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

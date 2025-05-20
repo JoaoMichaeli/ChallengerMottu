@@ -1,0 +1,49 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="20DA4475-C18A-84AD-238C-116B2179F538" name="TBL_STATUS_MOTOCICLETA">
+<createdBy>joaov</createdBy>
+<createdTime>2025-05-20 18:57:18 UTC</createdTime>
+<generatorID>3C324E8E-9A4F-A0C9-887D-164D19383288</generatorID>
+<ownerDesignName>visionhive</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_status" id="F3C882E0-2D56-8069-360B-4F4C7C8DD9BC">
+<createdBy>joaov</createdBy>
+<createdTime>2025-05-20 18:57:18 UTC</createdTime>
+<generatorID>99C75B55-EEF4-2BC0-CED4-CFA14593D4F9</generatorID>
+<ownerDesignName>visionhive</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descricao" id="A53DCCF7-BF86-7773-1712-B67C1A9E7DC2">
+<createdBy>joaov</createdBy>
+<createdTime>2025-05-20 18:57:18 UTC</createdTime>
+<generatorID>0F707D99-0C18-86F9-38D4-E89BF9E8A258</generatorID>
+<ownerDesignName>visionhive</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1C829D71-91CA-0A15-D68F-47E623B5C5BE" name="TBL_STATUS_MOTOCICLETA_PK">
+<createdBy>joaov</createdBy>
+<createdTime>2025-05-20 18:57:18 UTC</createdTime>
+<generatorID>A211C9E8-6DB6-93A1-2532-76353223906E</generatorID>
+<ownerDesignName>visionhive</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F3C882E0-2D56-8069-360B-4F4C7C8DD9BC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

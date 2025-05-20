@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F77BD1E3-C635-9024-D2D7-1C3CBBC52711" containerWithKeyObject="6C580228-54B2-424F-9F1C-7B1B24B3160C" localFKIndex="95B47A62-66D4-5A4A-7DA6-E81496632252" name="TBL_CIDADE_TBL_ESTADO_FK">
+<createdBy>joaov</createdBy>
+<createdTime>2025-05-20 18:57:18 UTC</createdTime>
+<generatorID>E8345443-9C55-E313-C160-FE9C8CFA2E57</generatorID>
+<ownerDesignName>visionhive</ownerDesignName>
+<referredTableLongName>TBL_ESTADO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>EEE88B5B-C12F-0DD4-BF6D-DB05499D6CA1</referredTableID>
+<keyObject>95A9A4B3-6ECC-CE60-93CC-C70A354B5F3A</keyObject>
+<referredKeyID>95A9A4B3-6ECC-CE60-93CC-C70A354B5F3A</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_estado</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="1DBB31D4-19F3-0A17-991B-737092379641" containerWithKeyObject="EEE88B5B-C12F-0DD4-BF6D-DB05499D6CA1" localFKIndex="3796BDA1-88D2-FF46-ABDE-ACD84D0404DB" name="TBL_ESTADO_TBL_PAIS_FK">
+<createdBy>joaov</createdBy>
+<createdTime>2025-05-20 18:57:18 UTC</createdTime>
+<generatorID>7BE114EB-7A47-E5B7-7D8F-BE4C45EE0850</generatorID>
+<ownerDesignName>visionhive</ownerDesignName>
+<referredTableLongName>TBL_PAIS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>88ED0593-5985-59CA-3B58-8F5EC4F85950</referredTableID>
+<keyObject>60F3D70F-A0E1-7045-A5AE-1ABC824CB218</keyObject>
+<referredKeyID>60F3D70F-A0E1-7045-A5AE-1ABC824CB218</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_pais</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

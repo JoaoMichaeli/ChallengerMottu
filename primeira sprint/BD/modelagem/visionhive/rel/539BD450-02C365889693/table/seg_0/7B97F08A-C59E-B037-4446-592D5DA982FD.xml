@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7B97F08A-C59E-B037-4446-592D5DA982FD" name="TBL_BAIRRO">
+<createdBy>joaov</createdBy>
+<createdTime>2025-05-20 18:57:18 UTC</createdTime>
+<generatorID>A4992133-3475-2F81-1D62-5594554C498C</generatorID>
+<ownerDesignName>visionhive</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_bairro" id="12B56FEC-E89F-103B-7C75-6FD278EADC58">
+<createdBy>joaov</createdBy>
+<createdTime>2025-05-20 18:57:18 UTC</createdTime>
+<generatorID>8EFEB25D-562D-138F-7EBE-341AD77842E8</generatorID>
+<ownerDesignName>visionhive</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nome" id="6D90CE13-398A-B3D9-E3EA-8D9F69467894">
+<createdBy>joaov</createdBy>
+<createdTime>2025-05-20 18:57:18 UTC</createdTime>
+<generatorID>289D0456-4AEE-593C-5D78-D46282702458</generatorID>
+<ownerDesignName>visionhive</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_cidade" id="E93CB14E-95B2-9DE8-73AA-8854F1AB4845">
+<createdBy>joaov</createdBy>
+<createdTime>2025-05-20 18:57:18 UTC</createdTime>
+<generatorID>46E73EE7-B299-A5AC-B15F-5B24E326C9B7</generatorID>
+<ownerDesignName>visionhive</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7FA29B6B-D6D5-70E7-626F-73915275DAB4" referredColumn="DD15CD2F-1554-6D95-5E95-669C121296FE"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BA82DE65-2FB7-9920-FC6A-6A673A2FD5C8" name="TBL_BAIRRO_PK">
+<createdBy>joaov</createdBy>
+<createdTime>2025-05-20 18:57:18 UTC</createdTime>
+<generatorID>35827F1B-F5D4-A027-3DF4-2DD68A86014E</generatorID>
+<ownerDesignName>visionhive</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="12B56FEC-E89F-103B-7C75-6FD278EADC58"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8AB74023-DFD9-6C68-5A32-55C6D0F8C892" name="TBL_BAIRRO_TBL_CIDADE_FK">
+<createdBy>joaov</createdBy>
+<createdTime>2025-05-20 18:57:18 UTC</createdTime>
+<generatorID>552AE9FB-77F1-8AB6-440A-4B16CC4B3443</generatorID>
+<ownerDesignName>visionhive</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E93CB14E-95B2-9DE8-73AA-8854F1AB4845"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

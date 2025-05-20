@@ -3,9 +3,6 @@
 <createdBy>joaov</createdBy>
 <createdTime>2025-05-13 19:56:32 UTC</createdTime>
 <ownerDesignName>visionhive</ownerDesignName>
-<engineerTo>
-<item key="3D577475-564B-A625-2483-544B1D70DCE4" value="true"/>
-</engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
 <fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
@@ -19,9 +16,6 @@
 <createdBy>joaov</createdBy>
 <createdTime>2025-05-13 19:57:17 UTC</createdTime>
 <ownerDesignName>visionhive</ownerDesignName>
-<engineerTo>
-<item key="3D577475-564B-A625-2483-544B1D70DCE4" value="true"/>
-</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -32,9 +26,6 @@
 <createdTime>2025-05-13 20:07:30 UTC</createdTime>
 <generatorID>6CDCE1A9-67DB-6605-36E3-6EF5251077BA</generatorID>
 <ownerDesignName>visionhive</ownerDesignName>
-<engineerTo>
-<item key="3D577475-564B-A625-2483-544B1D70DCE4" value="true"/>
-</engineerTo>
 <referedAttribute>26FD6F11-7064-58E4-68EE-8294666F5598</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -45,9 +36,6 @@
 <createdBy>joaov</createdBy>
 <createdTime>2025-05-13 19:57:34 UTC</createdTime>
 <ownerDesignName>visionhive</ownerDesignName>
-<engineerTo>
-<item key="3D577475-564B-A625-2483-544B1D70DCE4" value="true"/>
-</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
@@ -57,9 +45,6 @@
 <createdBy>joaov</createdBy>
 <createdTime>2025-05-13 19:57:56 UTC</createdTime>
 <ownerDesignName>visionhive</ownerDesignName>
-<engineerTo>
-<item key="3D577475-564B-A625-2483-544B1D70DCE4" value="true"/>
-</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
@@ -69,9 +54,6 @@
 <createdBy>joaov</createdBy>
 <createdTime>2025-05-13 19:58:25 UTC</createdTime>
 <ownerDesignName>visionhive</ownerDesignName>
-<engineerTo>
-<item key="3D577475-564B-A625-2483-544B1D70DCE4" value="true"/>
-</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
@@ -81,9 +63,6 @@
 <createdBy>joaov</createdBy>
 <createdTime>2025-05-13 19:59:17 UTC</createdTime>
 <ownerDesignName>visionhive</ownerDesignName>
-<engineerTo>
-<item key="3D577475-564B-A625-2483-544B1D70DCE4" value="true"/>
-</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -94,9 +73,6 @@
 <createdBy>joaov</createdBy>
 <createdTime>2025-05-13 19:58:57 UTC</createdTime>
 <ownerDesignName>visionhive</ownerDesignName>
-<engineerTo>
-<item key="3D577475-564B-A625-2483-544B1D70DCE4" value="true"/>
-</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -104,28 +80,11 @@
 <dataTypeSize>250</dataTypeSize>
 <ownDataTypeParameters>250,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id_categoria" id="074CC112-B9CA-A21D-378B-DFB0491333F3">
-<createdBy>labsfiap</createdBy>
-<createdTime>2025-05-20 14:31:25 UTC</createdTime>
-<generatorID>6CDCE1A9-67DB-6605-36E3-6EF5251077BA</generatorID>
-<ownerDesignName>visionhive</ownerDesignName>
-<engineerTo>
-<item key="3D577475-564B-A625-2483-544B1D70DCE4" value="true"/>
-</engineerTo>
-<referedAttribute>00419848-D435-5381-6D3F-9FC38E7EDB1A</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="id_filial" id="D4A68757-FC52-7EA5-A2AB-E9C75AC421E7">
 <createdBy>labsfiap</createdBy>
 <createdTime>2025-05-20 14:34:49 UTC</createdTime>
 <generatorID>D571817E-7A35-C558-529F-2DEAF3A306AF</generatorID>
 <ownerDesignName>visionhive</ownerDesignName>
-<engineerTo>
-<item key="3D577475-564B-A625-2483-544B1D70DCE4" value="true"/>
-</engineerTo>
 <referedAttribute>70B2C708-16EB-8F5D-083F-020AD950597E</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -137,9 +96,6 @@
 <createdTime>2025-05-20 14:36:38 UTC</createdTime>
 <generatorID>306D3CA0-6437-C553-D6A5-E65DA09154AD</generatorID>
 <ownerDesignName>visionhive</ownerDesignName>
-<engineerTo>
-<item key="3D577475-564B-A625-2483-544B1D70DCE4" value="true"/>
-</engineerTo>
 <referedAttribute>9A2A6298-D574-EA5E-EB90-71F2FA16E8AF</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -152,9 +108,6 @@
 <createdBy>joaov</createdBy>
 <createdTime>2025-05-13 19:57:34 UTC</createdTime>
 <ownerDesignName>visionhive</ownerDesignName>
-<engineerTo>
-<item key="3D577475-564B-A625-2483-544B1D70DCE4" value="true"/>
-</engineerTo>
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>1658E452-1926-8531-0BAD-98488D12F925</attributeRef>

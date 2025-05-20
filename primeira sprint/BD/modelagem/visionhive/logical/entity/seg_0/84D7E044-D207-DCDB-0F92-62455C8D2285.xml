@@ -3,9 +3,6 @@
 <createdBy>joaov</createdBy>
 <createdTime>2025-05-13 20:00:26 UTC</createdTime>
 <ownerDesignName>visionhive</ownerDesignName>
-<engineerTo>
-<item key="3D577475-564B-A625-2483-544B1D70DCE4" value="true"/>
-</engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
 <fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
@@ -19,9 +16,6 @@
 <createdBy>joaov</createdBy>
 <createdTime>2025-05-13 20:00:33 UTC</createdTime>
 <ownerDesignName>visionhive</ownerDesignName>
-<engineerTo>
-<item key="3D577475-564B-A625-2483-544B1D70DCE4" value="true"/>
-</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -32,9 +26,6 @@
 <createdTime>2025-05-13 20:02:43 UTC</createdTime>
 <generatorID>D332172C-F965-DA11-2947-6F65D16E8F18</generatorID>
 <ownerDesignName>visionhive</ownerDesignName>
-<engineerTo>
-<item key="3D577475-564B-A625-2483-544B1D70DCE4" value="true"/>
-</engineerTo>
 <referedAttribute>70B2C708-16EB-8F5D-083F-020AD950597E</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -45,9 +36,6 @@
 <createdBy>joaov</createdBy>
 <createdTime>2025-05-13 20:01:50 UTC</createdTime>
 <ownerDesignName>visionhive</ownerDesignName>
-<engineerTo>
-<item key="3D577475-564B-A625-2483-544B1D70DCE4" value="true"/>
-</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -58,9 +46,6 @@
 <createdBy>joaov</createdBy>
 <createdTime>2025-05-13 20:02:05 UTC</createdTime>
 <ownerDesignName>visionhive</ownerDesignName>
-<engineerTo>
-<item key="3D577475-564B-A625-2483-544B1D70DCE4" value="true"/>
-</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -73,9 +58,6 @@
 <createdBy>joaov</createdBy>
 <createdTime>2025-05-13 20:00:49 UTC</createdTime>
 <ownerDesignName>visionhive</ownerDesignName>
-<engineerTo>
-<item key="3D577475-564B-A625-2483-544B1D70DCE4" value="true"/>
-</engineerTo>
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>AD8E79B8-5A73-237F-88F2-737B49D8FA9C</attributeRef>

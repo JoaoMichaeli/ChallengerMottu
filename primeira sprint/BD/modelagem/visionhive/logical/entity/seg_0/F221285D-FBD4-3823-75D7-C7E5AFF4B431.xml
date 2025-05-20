@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="AB07DE81-7F9F-6789-7189-FCE9ABF527F6" name="TBL_CATEGORIA">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F221285D-FBD4-3823-75D7-C7E5AFF4B431" name="TBL_CIDADE">
 <createdBy>joaov</createdBy>
-<createdTime>2025-05-06 20:09:55 UTC</createdTime>
+<createdTime>2025-05-20 18:37:49 UTC</createdTime>
 <ownerDesignName>visionhive</ownerDesignName>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -12,18 +12,18 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="id_categoria" id="0A21CC0E-6ABF-8C1A-E852-F006CBDFA590">
+<Attribute name="id_cidade" id="62F2865C-361C-2943-1743-C518DE39AFDA">
 <createdBy>joaov</createdBy>
-<createdTime>2025-05-06 20:10:16 UTC</createdTime>
+<createdTime>2025-05-20 18:37:56 UTC</createdTime>
 <ownerDesignName>visionhive</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="descricao" id="ACE7457E-1C08-2EA8-17E7-907F084FB225">
+<Attribute name="nome" id="DAF8AE0C-6663-C7EF-B799-AA75757B7085">
 <createdBy>joaov</createdBy>
-<createdTime>2025-05-13 18:58:28 UTC</createdTime>
+<createdTime>2025-05-20 18:37:57 UTC</createdTime>
 <ownerDesignName>visionhive</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -31,15 +31,26 @@
 <dataTypeSize>100</dataTypeSize>
 <ownDataTypeParameters>100,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="id_estado" id="3C5DE438-2CE3-ABD9-715F-DCB1861BCAE0">
+<createdBy>joaov</createdBy>
+<createdTime>2025-05-20 18:40:42 UTC</createdTime>
+<generatorID>E8345443-9C55-E313-C160-FE9C8CFA2E57</generatorID>
+<ownerDesignName>visionhive</ownerDesignName>
+<referedAttribute>4CFDEF27-FF38-DAB2-49B6-C0444BD858B9</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="29AFEBDE-67C9-8FE7-D477-E976B158691F" name="TBL_CATEGORIA PK">
+<identifier id="5035D213-E881-BF1F-1086-A79032399FB8" name="TBL_CIDADE PK">
 <createdBy>joaov</createdBy>
-<createdTime>2025-05-06 20:10:25 UTC</createdTime>
+<createdTime>2025-05-20 18:38:06 UTC</createdTime>
 <ownerDesignName>visionhive</ownerDesignName>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>0A21CC0E-6ABF-8C1A-E852-F006CBDFA590</attributeRef>
+<attributeRef>62F2865C-361C-2943-1743-C518DE39AFDA</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

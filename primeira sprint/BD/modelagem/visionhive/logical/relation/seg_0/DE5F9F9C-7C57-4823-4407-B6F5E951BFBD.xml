@@ -1,13 +1,10 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_11" directorySegmentName="seg_0" id="C3CE5F2D-E87F-FC3C-3251-B09BB6721822">
-<createdBy>labsfiap</createdBy>
-<createdTime>2025-05-20 14:31:25 UTC</createdTime>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_19" directorySegmentName="seg_0" id="DE5F9F9C-7C57-4823-4407-B6F5E951BFBD">
+<createdBy>joaov</createdBy>
+<createdTime>2025-05-20 18:48:16 UTC</createdTime>
 <ownerDesignName>visionhive</ownerDesignName>
-<engineerTo>
-<item key="3D577475-564B-A625-2483-544B1D70DCE4" value="true"/>
-</engineerTo>
 <sourcePk>29AFEBDE-67C9-8FE7-D477-E976B158691F</sourcePk>
-<identifying>true</identifying>
+<identifying>false</identifying>
 <optionalSource>true</optionalSource>
 <optionalTarget>false</optionalTarget>
 <sourceCardinality>1</sourceCardinality>

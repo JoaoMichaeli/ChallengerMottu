@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="D7646CF9-2265-37B5-F118-1B20B25C3370" containerWithKeyObject="44DBF07C-072C-0067-630D-5C59A192BF66" localFKIndex="EE47A599-9C45-8E93-3A7F-A4B9DAABC772" name="TBL_MOVIMENTACAO_TBL_MOTIVO_MOVIMENTACAO_FK">
+<createdBy>joaov</createdBy>
+<createdTime>2025-05-20 18:57:18 UTC</createdTime>
+<generatorID>306D3CA0-6437-C553-D6A5-E65DA09154AD</generatorID>
+<ownerDesignName>visionhive</ownerDesignName>
+<referredTableLongName>TBL_MOTIVO_MOVIMENTACAO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>A8E0AC7B-00D2-1859-DB46-03D740437340</referredTableID>
+<keyObject>FA215986-E082-D3B9-E007-156C2212D5B1</keyObject>
+<referredKeyID>FA215986-E082-D3B9-E007-156C2212D5B1</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_motivo_movimentacao</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

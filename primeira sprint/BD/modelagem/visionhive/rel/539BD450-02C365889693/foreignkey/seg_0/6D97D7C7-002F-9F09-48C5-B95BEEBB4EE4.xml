@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="6D97D7C7-002F-9F09-48C5-B95BEEBB4EE4" containerWithKeyObject="890AACA3-C8D8-9382-F0B3-BB0963CB52A6" localFKIndex="7C7AF3CB-5558-C019-B653-6175142F8AAA" name="TBL_MOTOCICLETA_TBL_STATUS_MOTOCICLETA_FK">
+<createdBy>joaov</createdBy>
+<createdTime>2025-05-20 18:57:18 UTC</createdTime>
+<generatorID>9258C67F-1CE7-0B0B-804C-9DC869CA6FE0</generatorID>
+<ownerDesignName>visionhive</ownerDesignName>
+<referredTableLongName>TBL_STATUS_MOTOCICLETA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>20DA4475-C18A-84AD-238C-116B2179F538</referredTableID>
+<keyObject>1C829D71-91CA-0A15-D68F-47E623B5C5BE</keyObject>
+<referredKeyID>1C829D71-91CA-0A15-D68F-47E623B5C5BE</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_status</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

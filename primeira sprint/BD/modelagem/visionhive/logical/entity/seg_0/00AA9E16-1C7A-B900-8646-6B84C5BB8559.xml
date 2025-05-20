@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0CDF3915-8A02-A954-94E1-9C593E9A2D62" name="TBL_CONTATO">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="00AA9E16-1C7A-B900-8646-6B84C5BB8559" name="TBL_TIPO_CONTATO">
 <createdBy>joaov</createdBy>
-<createdTime>2025-05-13 19:13:14 UTC</createdTime>
+<createdTime>2025-05-20 18:44:43 UTC</createdTime>
 <ownerDesignName>visionhive</ownerDesignName>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -12,18 +12,28 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="id_contato" id="513C9DB1-3941-4B84-6825-2800AE9FDE58">
+<Attribute name="id_tipo" id="089D679E-4606-8FF3-523D-B3C6196AF2B7">
 <createdBy>joaov</createdBy>
-<createdTime>2025-05-13 19:14:18 UTC</createdTime>
+<createdTime>2025-05-20 18:49:57 UTC</createdTime>
 <ownerDesignName>visionhive</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="valor" id="720B437D-0BA2-3A47-50D6-BEBA1BCB88C7">
+<Attribute name="nome" id="EA82D5FC-131B-0590-1161-8D48D1C52DFB">
 <createdBy>joaov</createdBy>
-<createdTime>2025-05-13 19:14:18 UTC</createdTime>
+<createdTime>2025-05-20 18:50:27 UTC</createdTime>
+<ownerDesignName>visionhive</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="descricao" id="8435433B-A935-FAB3-7CDB-4C65BCD63DCA">
+<createdBy>joaov</createdBy>
+<createdTime>2025-05-20 18:50:37 UTC</createdTime>
 <ownerDesignName>visionhive</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -31,23 +41,22 @@
 <dataTypeSize>100</dataTypeSize>
 <ownDataTypeParameters>100,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="observacao" id="5642A90A-673C-1F3C-D348-A9FB9C0AD197">
+<Attribute name="status" id="1894B1AF-1784-B8AB-A526-D097DE5801D1">
 <createdBy>joaov</createdBy>
-<createdTime>2025-05-13 19:14:18 UTC</createdTime>
+<createdTime>2025-05-20 18:50:46 UTC</createdTime>
 <ownerDesignName>visionhive</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>100</dataTypeSize>
-<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id_filial" id="2588F3B2-7425-2DBA-C89B-6EDACCEC8E4E">
+<Attribute name="id_contato" id="84BBFF86-3DA7-844F-BB21-42719E331E34">
 <createdBy>joaov</createdBy>
-<createdTime>2025-05-20 18:52:12 UTC</createdTime>
-<generatorID>3E8E59C6-C3B3-ED44-F15A-E83B6199B1FC</generatorID>
+<createdTime>2025-05-20 18:52:02 UTC</createdTime>
+<generatorID>7E0842B1-AD21-61B5-513B-FD6AADFF6C87</generatorID>
 <ownerDesignName>visionhive</ownerDesignName>
-<referedAttribute>70B2C708-16EB-8F5D-083F-020AD950597E</referedAttribute>
+<referedAttribute>513C9DB1-3941-4B84-6825-2800AE9FDE58</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -55,22 +64,13 @@
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="FC1986B2-C878-42EF-4C6B-70BC79829EBA" name="TBL_TELEFONE PK">
+<identifier id="C9C6B3E9-63A6-A7C3-5BB6-16504182B6C6" name="TBL_TIPO_CONTATO PK">
 <createdBy>joaov</createdBy>
-<createdTime>2025-05-13 19:14:39 UTC</createdTime>
+<createdTime>2025-05-20 18:50:26 UTC</createdTime>
 <ownerDesignName>visionhive</ownerDesignName>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>513C9DB1-3941-4B84-6825-2800AE9FDE58</attributeRef>
-</usedAttributes>
-</identifier>
-<identifier id="2DD0AC1F-7D2D-BD02-65DB-6068E4175B45" name="TBL_TELEFONE_UN">
-<createdBy>joaov</createdBy>
-<createdTime>2025-05-13 19:17:14 UTC</createdTime>
-<ownerDesignName>visionhive</ownerDesignName>
-<newElementsIDs>720B437D-0BA2-3A47-50D6-BEBA1BCB88C7</newElementsIDs>
-<usedAttributes>
-<attributeRef>720B437D-0BA2-3A47-50D6-BEBA1BCB88C7</attributeRef>
+<attributeRef>089D679E-4606-8FF3-523D-B3C6196AF2B7</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

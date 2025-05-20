@@ -3,9 +3,6 @@
 <createdBy>labsfiap</createdBy>
 <createdTime>2025-05-20 14:37:19 UTC</createdTime>
 <ownerDesignName>visionhive</ownerDesignName>
-<engineerTo>
-<item key="3D577475-564B-A625-2483-544B1D70DCE4" value="true"/>
-</engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
 <fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
@@ -19,9 +16,6 @@
 <createdBy>labsfiap</createdBy>
 <createdTime>2025-05-20 14:37:25 UTC</createdTime>
 <ownerDesignName>visionhive</ownerDesignName>
-<engineerTo>
-<item key="3D577475-564B-A625-2483-544B1D70DCE4" value="true"/>
-</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -32,24 +26,7 @@
 <createdTime>2025-05-20 14:38:16 UTC</createdTime>
 <generatorID>3854C8E2-E055-3C15-C40C-F03BF32C79C4</generatorID>
 <ownerDesignName>visionhive</ownerDesignName>
-<engineerTo>
-<item key="3D577475-564B-A625-2483-544B1D70DCE4" value="true"/>
-</engineerTo>
 <referedAttribute>26FD6F11-7064-58E4-68EE-8294666F5598</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="id_categoria" id="EC4809F3-97BE-4966-A9E1-0BDB822E543F">
-<createdBy>labsfiap</createdBy>
-<createdTime>2025-05-20 14:38:16 UTC</createdTime>
-<generatorID>3854C8E2-E055-3C15-C40C-F03BF32C79C4</generatorID>
-<ownerDesignName>visionhive</ownerDesignName>
-<engineerTo>
-<item key="3D577475-564B-A625-2483-544B1D70DCE4" value="true"/>
-</engineerTo>
-<referedAttribute>00419848-D435-5381-6D3F-9FC38E7EDB1A</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -61,9 +38,6 @@
 <createdBy>labsfiap</createdBy>
 <createdTime>2025-05-20 14:37:44 UTC</createdTime>
 <ownerDesignName>visionhive</ownerDesignName>
-<engineerTo>
-<item key="3D577475-564B-A625-2483-544B1D70DCE4" value="true"/>
-</engineerTo>
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>29E484B5-D44F-4B62-A0C7-0702D8B1FFFD</attributeRef>

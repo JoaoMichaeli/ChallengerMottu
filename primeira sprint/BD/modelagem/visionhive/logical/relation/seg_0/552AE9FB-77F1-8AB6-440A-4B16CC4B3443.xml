@@ -1,16 +1,16 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_7" directorySegmentName="seg_0" id="6CDCE1A9-67DB-6605-36E3-6EF5251077BA">
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_17" directorySegmentName="seg_0" id="552AE9FB-77F1-8AB6-440A-4B16CC4B3443">
 <createdBy>joaov</createdBy>
-<createdTime>2025-05-13 20:07:30 UTC</createdTime>
+<createdTime>2025-05-20 18:40:54 UTC</createdTime>
 <ownerDesignName>visionhive</ownerDesignName>
-<sourcePk>F8C856EE-0424-8C12-29DE-AA5C74102C9E</sourcePk>
+<sourcePk>5035D213-E881-BF1F-1086-A79032399FB8</sourcePk>
 <identifying>false</identifying>
 <optionalSource>false</optionalSource>
 <optionalTarget>false</optionalTarget>
 <sourceCardinality>1</sourceCardinality>
-<sourceEntity>25DD3AB9-3293-0E41-D106-104646FE5A3E</sourceEntity>
+<sourceEntity>F221285D-FBD4-3823-75D7-C7E5AFF4B431</sourceEntity>
 <targetCardinalityString>*</targetCardinalityString>
-<targetEntity>A54CE702-5FFB-A730-AA04-F8EBBF557133</targetEntity>
+<targetEntity>A4992133-3475-2F81-1D62-5594554C498C</targetEntity>
 <transferable>true</transferable>
 <deleteRule>NO ACTION</deleteRule>
 </Relation>

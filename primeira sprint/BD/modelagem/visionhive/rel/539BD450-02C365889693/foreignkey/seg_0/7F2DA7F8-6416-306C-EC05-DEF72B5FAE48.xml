@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="7F2DA7F8-6416-306C-EC05-DEF72B5FAE48" containerWithKeyObject="44DBF07C-072C-0067-630D-5C59A192BF66" localFKIndex="636A1C27-70DD-FFA8-8B6E-7A5EF30AAF3A" name="TBL_MOVIMENTACAO_TBL_FILIAL_FK">
+<createdBy>joaov</createdBy>
+<createdTime>2025-05-20 18:57:18 UTC</createdTime>
+<generatorID>D571817E-7A35-C558-529F-2DEAF3A306AF</generatorID>
+<ownerDesignName>visionhive</ownerDesignName>
+<referredTableLongName>TBL_FILIAL</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>B346853B-77B3-1E0E-14DB-FDD50209374E</referredTableID>
+<keyObject>88A7DC0B-3D01-E304-37A1-CD927614C99B</keyObject>
+<referredKeyID>88A7DC0B-3D01-E304-37A1-CD927614C99B</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_filial</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

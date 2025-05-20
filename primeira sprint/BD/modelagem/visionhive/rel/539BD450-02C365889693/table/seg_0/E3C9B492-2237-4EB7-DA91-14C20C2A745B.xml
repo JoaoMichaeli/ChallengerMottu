@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E3C9B492-2237-4EB7-DA91-14C20C2A745B" name="TBL_MODELO">
+<createdBy>joaov</createdBy>
+<createdTime>2025-05-20 18:57:18 UTC</createdTime>
+<generatorID>ECAF4366-8D7B-4988-1D40-7548F8CB8675</generatorID>
+<ownerDesignName>visionhive</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_modelo" id="96044F26-9E6D-E4C7-4759-11653997C73B">
+<createdBy>joaov</createdBy>
+<createdTime>2025-05-20 18:57:18 UTC</createdTime>
+<generatorID>29E484B5-D44F-4B62-A0C7-0702D8B1FFFD</generatorID>
+<ownerDesignName>visionhive</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_moto" id="8AE8E2B1-F520-753F-ECDC-AA4507411A7B">
+<createdBy>joaov</createdBy>
+<createdTime>2025-05-20 18:57:18 UTC</createdTime>
+<generatorID>EC56F835-22FB-ACE6-86F4-010D32FA1980</generatorID>
+<ownerDesignName>visionhive</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9B4E2990-7440-3D95-1064-044EA7D8A2F1" referredColumn="954FE713-C935-5AD2-9116-D061239DC246"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B6450F02-35FA-AF75-F017-6102FF1F4091" name="TBL_MODELO_PK">
+<createdBy>joaov</createdBy>
+<createdTime>2025-05-20 18:57:18 UTC</createdTime>
+<generatorID>EAAE3801-597E-E0F3-0BB5-B011C42E7C26</generatorID>
+<ownerDesignName>visionhive</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="96044F26-9E6D-E4C7-4759-11653997C73B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="072AFC23-A71E-E5E0-A8C9-CBF425814337" name="TBL_MODELO__IDX">
+<createdBy>joaov</createdBy>
+<createdTime>2025-05-20 18:57:18 UTC</createdTime>
+<ownerDesignName>visionhive</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>3854C8E2-E055-3C15-C40C-F03BF32C79C4</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="8AE8E2B1-F520-753F-ECDC-AA4507411A7B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BC48D696-4085-D24E-8751-319259958FA6" name="TBL_MODELO_TBL_MOTOCICLETA_FK">
+<createdBy>joaov</createdBy>
+<createdTime>2025-05-20 18:57:18 UTC</createdTime>
+<generatorID>3854C8E2-E055-3C15-C40C-F03BF32C79C4</generatorID>
+<ownerDesignName>visionhive</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8AE8E2B1-F520-753F-ECDC-AA4507411A7B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
