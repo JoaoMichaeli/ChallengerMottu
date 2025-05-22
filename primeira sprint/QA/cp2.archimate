@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.archimatetool.com/archimate" name="CP2" id="id-92911f4a676e4370b65a7be4a2bab623" version="5.0.0">
+  <folder name="Strategy" id="id-1a6d068d26ae4482b9afe92849ce456c" type="strategy"/>
+  <folder name="Business" id="id-f147f321a2284bca85deeecd2a604ab7" type="business"/>
+  <folder name="Application" id="id-a440fefa72e74113965de620869e95e7" type="application"/>
+  <folder name="Technology &amp; Physical" id="id-b6f90ceb276746dd8dec9e3b47c70b7d" type="technology"/>
+  <folder name="Motivation" id="id-52cc9d7a12704fe8bcd99daf74f72d17" type="motivation">
+    <element xsi:type="archimate:Stakeholder" name="STAKERHOLDER: Product Manager" id="id-c7611c0be7b3479d920be86179094822"/>
+    <element xsi:type="archimate:Goal" name="GOAL: Mapeamento Inteligente e Gestão das Motos" id="id-404e96779a834aee8c4b8753591cba76"/>
+    <element xsi:type="archimate:Driver" name="DRIVER: Dificuldade na organização e gestão das motos no pátio" id="id-0b765f2307524078be43323f1f404d5c"/>
+    <element xsi:type="archimate:Assessment" name="ASSES: Alta quantidade de  motos no pátio" id="id-6e0f1ad1aed44368955147c6d083058c"/>
+    <element xsi:type="archimate:Principle" name="PRINCIPLE: Setorização do espaço e Melhor Identificação das motos" id="id-acd9cf8741ff41619f8cb8e0cb1aefca"/>
+    <element xsi:type="archimate:Requirement" name="REQUIREMENT: Utilização de visão computacional" id="id-189ef2c254084ed59d46af2a1635bb25"/>
+    <element xsi:type="archimate:Requirement" name="REQUIREMENT: Cadastro dedicado das motos" id="id-8a41544653134ab4b4994d59e29db559"/>
+  </folder>
+  <folder name="Implementation &amp; Migration" id="id-a56db637d75949ffaf3c0de8c732ae30" type="implementation_migration"/>
+  <folder name="Other" id="id-8f555cc954774ab7ad4ae677fac056d6" type="other"/>
+  <folder name="Relations" id="id-4da7117d326147f99100a9ef21196730" type="relations">
+    <element xsi:type="archimate:AssociationRelationship" id="id-609d47ab592b4057825db95ce073bbdb" source="id-c7611c0be7b3479d920be86179094822" target="id-0b765f2307524078be43323f1f404d5c"/>
+    <element xsi:type="archimate:InfluenceRelationship" id="id-26a91454e19a4f28a17c023465ec2593" source="id-0b765f2307524078be43323f1f404d5c" target="id-6e0f1ad1aed44368955147c6d083058c"/>
+    <element xsi:type="archimate:InfluenceRelationship" id="id-eb52c94c79f041d68e167e611d7ff0a1" source="id-0b765f2307524078be43323f1f404d5c" target="id-404e96779a834aee8c4b8753591cba76"/>
+  </folder>
+  <folder name="Views" id="id-2d81ee04eb7e4907aea7e4612cbcab94" type="diagrams">
+    <element xsi:type="archimate:ArchimateDiagramModel" name="Default View" id="id-603137ae6e2d4a49b4f314d1d9c8c52f">
+      <child xsi:type="archimate:Note" id="id-a37e1d385e8d4f76a72c7570810ea25e" textAlignment="1">
+        <bounds x="173" y="146" width="248" height="80"/>
+        <content>MottuHive&#xD;
+RM: 558062 - Henrique Francisco Garcia&#xD;
+RM: 555678 - João V. Michaeli de bem&#xD;
+RM: 557197 - Larissa M. Muniz</content>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-2822616b69484e7ea18e33ffafa01957" archimateElement="id-c7611c0be7b3479d920be86179094822">
+        <bounds x="192" y="252" width="148" height="43"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-0311a38b2fb940b6af203be64ab3e649" source="id-2822616b69484e7ea18e33ffafa01957" target="id-af0708a8757244d799aa0fec44f1d7b6" archimateRelationship="id-609d47ab592b4057825db95ce073bbdb"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-5755c3ad6f4041e780bc996d4bd1ff1a" targetConnections="id-a7fcd3b6b9be4b7e86e02a9ef611b2b2" archimateElement="id-404e96779a834aee8c4b8753591cba76">
+        <bounds x="192" y="444" width="165" height="61"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-af0708a8757244d799aa0fec44f1d7b6" targetConnections="id-0311a38b2fb940b6af203be64ab3e649" archimateElement="id-0b765f2307524078be43323f1f404d5c">
+        <bounds x="192" y="336" width="193" height="61"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-0274b124ddc8447594baf5480df3f02d" source="id-af0708a8757244d799aa0fec44f1d7b6" target="id-6d78f4d2223246d88a62502d5fd98109" archimateRelationship="id-26a91454e19a4f28a17c023465ec2593"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-a7fcd3b6b9be4b7e86e02a9ef611b2b2" source="id-af0708a8757244d799aa0fec44f1d7b6" target="id-5755c3ad6f4041e780bc996d4bd1ff1a" archimateRelationship="id-eb52c94c79f041d68e167e611d7ff0a1"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-6d78f4d2223246d88a62502d5fd98109" targetConnections="id-0274b124ddc8447594baf5480df3f02d" archimateElement="id-6e0f1ad1aed44368955147c6d083058c">
+        <bounds x="468" y="336" width="167" height="49"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-3a160fe455f84f09b75d628262eaf6d2" archimateElement="id-acd9cf8741ff41619f8cb8e0cb1aefca">
+        <bounds x="420" y="456" width="167" height="74"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-15a4542a8f484e7cade1c0b9cc3e1e6e" archimateElement="id-189ef2c254084ed59d46af2a1635bb25">
+        <bounds x="339" y="564" width="157" height="61"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-cd8b71a47f9a46248d6bdeea6d88cfdd" archimateElement="id-8a41544653134ab4b4994d59e29db559">
+        <bounds x="564" y="565" width="150" height="60"/>
+      </child>
+    </element>
+  </folder>
+</archimate:model>
