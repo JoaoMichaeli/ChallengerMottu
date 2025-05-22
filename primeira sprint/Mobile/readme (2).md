@@ -1,7 +1,5 @@
 # VisionHive - Sistema de Gerenciamento de Pátio
 
-![VisionHive Logo](https://via.placeholder.com/150x150.png?text=VisionHive)
-
 ## 📌 Descrição do Projeto
 
 O VisionHive é um aplicativo mobile desenvolvido para automatizar e otimizar a gestão das motos nos pátios da empresa. O sistema permite o controle completo do fluxo de motos, desde o cadastro até a saída, com uma interface intuitiva e responsiva que funciona em qualquer dispositivo.
@@ -20,7 +18,8 @@ Com centenas de motos distribuídas em diversos pátios, a empresa enfrenta difi
 
 ## 💡 Nossa Solução
 
-O *VisionHive* propõe um sistema mobile completo que permite:
+O _VisionHive_ propõe um sistema mobile completo que permite:
+
 - Cadastro detalhado de motos com informações de chassi, placa e motor
 - Visualização do mapa do pátio para localização rápida
 - Controle de movimentação entre diferentes áreas
@@ -48,12 +47,14 @@ O *VisionHive* propõe um sistema mobile completo que permite:
 ### Instalação
 
 1. Clone o repositório:
+
    ```bash
    git clone https://github.com/seu-usuario/visionhive.git
    cd visionhive
    ```
 
 2. Instale as dependências:
+
    ```bash
    npm install
    # ou
@@ -61,6 +62,7 @@ O *VisionHive* propõe um sistema mobile completo que permite:
    ```
 
 3. Inicie o aplicativo com Expo:
+
    ```bash
    npx expo start
    ```
@@ -89,11 +91,11 @@ O *VisionHive* propõe um sistema mobile completo que permite:
 
 ## 👥 Integrantes
 
-| Nome                   | RM       |
-|------------------------|----------|
-| João Victor Michaeli   | RM555678 |
-| Larissa Muniz          | RM557197 |
-| Henrique Garcia        | RM558062 |
+| Nome                 | RM       |
+| -------------------- | -------- |
+| João Victor Michaeli | RM555678 |
+| Larissa Muniz        | RM557197 |
+| Henrique Garcia      | RM558062 |
 
 ---
 
