@@ -1,7 +1,5 @@
 # VisionHive - Sistema de Gerenciamento de Pátio
 
-![VisionHive Logo](https://via.placeholder.com/150x150.png?text=VisionHive)
-
 ## 📌 Descrição do Projeto
 
 O VisionHive é um aplicativo mobile desenvolvido para automatizar e otimizar a gestão das motos nos pátios da empresa. O sistema permite o controle completo do fluxo de motos, desde o cadastro até a saída, com uma interface intuitiva e responsiva que funciona em qualquer dispositivo.
