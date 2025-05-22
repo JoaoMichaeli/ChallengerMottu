@@ -18,9 +18,10 @@ export default function SelecionarFilial({ navigation }) {
     const valorLimpo = valor.trim();
     if (['1', '2', '3'].includes(valorLimpo)) {
       atualizarFilial(valorLimpo);
+      // Corrigido para navegar para DrawerNavigator em vez de MenuPrincipal
       navigation.reset({
         index: 0,
-        routes: [{ name: 'MenuPrincipal' }],
+        routes: [{ name: 'DrawerNavigator' }],
       });
     } else {
       Alert.alert('Erro', 'Digite uma filial válida (1, 2 ou 3)');
@@ -32,7 +33,6 @@ export default function SelecionarFilial({ navigation }) {
       <Header showMenu={false} />
       <View style={styles.content}>
         <Text style={styles.label}>Selecione sua filial</Text>
-
         <TextInput
           style={styles.input}
           placeholder="1, 2 ou 3"
@@ -41,7 +41,6 @@ export default function SelecionarFilial({ navigation }) {
           onChangeText={setValor}
           keyboardType="numeric"
         />
-
         <View style={styles.botao}>
           <Button title="CONFIRMAR" onPress={confirmar} color="#007bff" />
         </View>
