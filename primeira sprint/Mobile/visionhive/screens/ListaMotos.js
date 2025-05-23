@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react';
-import { View, Text, StyleSheet, ScrollView, TextInput } from 'react-native';
+import { View, Text, FlatList, StyleSheet, TextInput } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { FilialContext } from '../context/FilialContext';
 import Header from '../components/Header';
@@ -19,33 +19,41 @@ export default function ListaMotos({ navigation }) {
       setMotos(lista);
       setMotosFiltradas(lista);
     };
-
     carregarMotos();
-
-    const unsubscribe = navigation.addListener('focus', () => {
-      carregarMotos();
-    });
-
-    return unsubscribe;
-  }, [filial, navigation]);
+  }, [filial]);
 
   useEffect(() => {
-    if (filtro.trim() === '') {
-      setMotosFiltradas(motos);
-    } else {
-      const termoBusca = filtro.toLowerCase().trim();
-      const resultado = motos.filter(moto =>
-        (moto.chassi && moto.chassi.toLowerCase().includes(termoBusca)) ||
-        (moto.placa && moto.placa.toLowerCase().includes(termoBusca)) ||
-        (moto.motor && moto.motor.toString().includes(termoBusca))
+    if (filtro) {
+      const filtradas = motos.filter(
+        moto =>
+          (moto.chassi && moto.chassi.toLowerCase().includes(filtro.toLowerCase())) ||
+          (moto.placa && moto.placa.toLowerCase().includes(filtro.toLowerCase())) ||
+          (moto.motor && moto.motor.toString().includes(filtro))
       );
-      setMotosFiltradas(resultado);
+      setMotosFiltradas(filtradas);
+    } else {
+      setMotosFiltradas(motos);
     }
   }, [filtro, motos]);
 
+  const renderItem = ({ item }) => (
+    <View style={styles.item}>
+      <Text style={styles.texto}>Chassi: {item.chassi}</Text>
+      <Text style={styles.texto}>Placa: {item.placa}</Text>
+      <Text style={styles.texto}>Motor: {item.motor}</Text>
+      <Text style={styles.texto}>Modelo: {item.modelo}</Text>
+      <Text style={styles.texto}>Situação: {item.situacao}</Text>
+      <Text style={styles.texto}>Local: {item.local}</Text>
+    </View>
+  );
+
   return (
     <View style={styles.container}>
-      <Header onMenuPress={() => navigation.openDrawer()} />
+      <Header
+        onMenuPress={() => navigation.openDrawer()}
+        showBackButton={true}
+        onBackPress={() => navigation.navigate('MenuPrincipal')}
+      />
       <Text style={styles.filial}>Filial: {filial}</Text>
       <Text style={styles.titulo}>Lista de Motos</Text>
 
@@ -59,38 +67,17 @@ export default function ListaMotos({ navigation }) {
         />
       </View>
 
-      {motosFiltradas.length > 0 ? (
-        <View style={styles.tableContainer}>
-          <View style={styles.headerRow}>
-            <Text style={styles.headerCell}>Chassi</Text>
-            <Text style={styles.headerCell}>Placa</Text>
-            <Text style={styles.headerCell}>Motor</Text>
-            <Text style={styles.headerCell}>Modelo</Text>
-            <Text style={styles.headerCell}>Situação</Text>
-            <Text style={styles.headerCell}>Local</Text>
-          </View>
-
-          <ScrollView>
-            {motosFiltradas.map((moto, index) => (
-              <View key={index} style={[styles.dataRow, index % 2 === 0 ? styles.evenRow : styles.oddRow]}>
-                <Text style={styles.dataCell}>{moto.chassi || '-'}</Text>
-                <Text style={styles.dataCell}>{moto.placa || '-'}</Text>
-                <Text style={styles.dataCell}>{moto.motor || '-'}</Text>
-                <Text style={styles.dataCell}>{moto.modelo || '-'}</Text>
-                <Text style={styles.dataCell}>{moto.situacao || '-'}</Text>
-                <Text style={styles.dataCell}>{moto.local || '-'}</Text>
-              </View>
-            ))}
-          </ScrollView>
-        </View>
-      ) : (
-        <View style={styles.emptyContainer}>
-          <Text style={styles.emptyText}>
-            {motos.length === 0 ? 'Nenhuma moto cadastrada' : 'Nenhuma moto encontrada com o filtro aplicado'}
+      <FlatList
+        data={motosFiltradas}
+        keyExtractor={(item, index) => index.toString()}
+        renderItem={renderItem}
+        contentContainerStyle={{ paddingBottom: 20 }}
+        ListEmptyComponent={
+          <Text style={styles.mensagemVazia}>
+            {motos.length === 0 ? "Nenhuma moto cadastrada" : "Nenhuma moto encontrada com o filtro aplicado"}
           </Text>
-        </View>
-      )}
-
+        }
+      />
       <Footer />
     </View>
   );
@@ -103,72 +90,45 @@ const styles = StyleSheet.create({
   },
   filial: {
     color: '#0f0',
-    fontSize: 18,
+    fontSize: 22,
     alignSelf: 'flex-end',
-    marginTop: 10,
     marginRight: 20,
+    marginBottom: 10,
   },
   titulo: {
     color: '#fff',
     fontSize: 22,
     textAlign: 'center',
-    marginVertical: 15,
+    marginBottom: 10,
   },
   filtroContainer: {
-    paddingHorizontal: 15,
+    paddingHorizontal: 20,
     marginBottom: 15,
   },
   filtroInput: {
-    backgroundColor: '#111',
-    borderWidth: 1,
-    borderColor: '#333',
-    borderRadius: 4,
+    backgroundColor: '#222',
     color: '#fff',
+    borderWidth: 1,
+    borderColor: '#444',
+    borderRadius: 5,
     padding: 10,
-  },
-  tableContainer: {
-    flex: 1,
-    marginHorizontal: 10,
-  },
-  headerRow: {
-    flexDirection: 'row',
-    backgroundColor: '#000',
-    paddingVertical: 10,
-    borderBottomWidth: 2,
-    borderBottomColor: '#333',
-  },
-  headerCell: {
-    flex: 1,
-    color: '#0088ff',
-    fontWeight: 'bold',
     fontSize: 16,
-    textAlign: 'center',
   },
-  dataRow: {
-    flexDirection: 'row',
-    paddingVertical: 10,
+  item: {
     borderBottomWidth: 1,
     borderBottomColor: '#333',
+    padding: 10,
+    marginHorizontal: 20,
+    marginBottom: 10,
   },
-  evenRow: {
-    backgroundColor: '#111',
-  },
-  oddRow: {
-    backgroundColor: '#222',
-  },
-  dataCell: {
-    flex: 1,
+  texto: {
     color: '#fff',
     fontSize: 14,
+  },
+  mensagemVazia: {
+    color: '#888',
     textAlign: 'center',
-  },
-  emptyContainer: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  emptyText: {
-    color: '#fff',
-    fontSize: 18,
+    marginTop: 30,
+    fontSize: 16,
   },
 });

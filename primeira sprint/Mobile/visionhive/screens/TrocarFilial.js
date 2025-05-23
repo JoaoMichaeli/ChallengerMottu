@@ -15,14 +15,17 @@ export default function TrocarFilial({ navigation }) {
         routes: [{ name: 'SelecionarFilial' }],
       });
     }, 1000);
+
     return () => clearTimeout(timeout);
   }, []);
 
   return (
     <View style={styles.container}>
-      <Header onMenuPress={() => navigation.openDrawer()} />
-      <View style={styles.content}>
-      </View>
+      <Header
+        onMenuPress={() => navigation.openDrawer()}
+        showBackButton={true}
+        onBackPress={() => navigation.navigate('MenuPrincipal')}
+      />
       <Footer />
     </View>
   );
@@ -32,8 +35,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#000',
-  },
-  content: {
-    flex: 1,
+    paddingTop: 40,
   },
 });

@@ -9,7 +9,11 @@ export default function GerenciarPatio({ navigation }) {
 
   return (
     <View style={styles.container}>
-      <Header onMenuPress={() => navigation.openDrawer()} />
+      <Header
+        onMenuPress={() => navigation.openDrawer()}
+        showBackButton={true}
+        onBackPress={() => navigation.navigate('MenuPrincipal')}
+      />
 
       <View style={styles.content}>
         <Text style={styles.filial}>Filial: {filial}</Text>
@@ -47,15 +51,15 @@ const styles = StyleSheet.create({
     color: '#0f0',
     fontSize: 18,
     position: 'absolute',
-    top: 60, // para ficar logo abaixo do Header
+    top: 60,
     right: 15,
   },
   content: {
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    paddingTop: 20, // garante distância do Header
-    paddingBottom: 30, // espaço para o Footer
+    paddingTop: 20,
+    paddingBottom: 30,
   },
   titulo: {
     color: '#fff',

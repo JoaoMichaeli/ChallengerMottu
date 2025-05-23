@@ -2,11 +2,16 @@ import React from 'react';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 
-export default function Header({ onMenuPress, showMenu = true }) {
+export default function Header({ onMenuPress, showMenu = true, onBackPress, showBackButton = false }) {
   return (
     <View style={styles.header}>
-      {/* Container invisível para forçar centralização */}
-      {showMenu ? <View style={styles.spacer} /> : null}
+      {showBackButton ? (
+        <TouchableOpacity onPress={onBackPress} style={styles.backButton}>
+          <Ionicons name="arrow-back" size={24} color="#fff" />
+        </TouchableOpacity>
+      ) : showMenu ? (
+        <View style={styles.spacer} />
+      ) : null}
 
       <Text style={styles.title}>VisionHive</Text>
 
@@ -40,6 +45,9 @@ const styles = StyleSheet.create({
   },
   menuButton: {
     paddingLeft: 16,
+  },
+  backButton: {
+    paddingRight: 16,
   },
   spacer: {
     width: 24,

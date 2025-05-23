@@ -10,7 +10,11 @@ export default function MapaPatio({ navigation }) {
 
   return (
     <View style={styles.container}>
-      <Header onMenuPress={() => navigation.openDrawer()} />
+      <Header
+        onMenuPress={() => navigation.openDrawer()}
+        showBackButton={true}
+        onBackPress={() => navigation.navigate('MenuPrincipal')}
+      />
 
       <View style={styles.content}>
         <Text style={styles.titulo}>Mapa do Pátio</Text>
